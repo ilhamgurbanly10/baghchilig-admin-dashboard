@@ -1,0 +1,31 @@
+{
+    "HeadContainer": {
+        "allNews": "All News",
+        "allNewsText": "You can read all news from the world only here"
+    },
+    "menu": {
+        "item1": "HOME",
+        "item2": "OUR PROJECTS",
+        "item3": "GALLERY",
+        "item4": "ABOUT US",
+        "item5": "BLOG",
+        "item6": "CONTACT"
+    },
+    "subMenu1": {
+        "item1": "PROJECT 01",
+        "item2": "PROJECT 02",
+        "item3": "PROJECT 03",
+        "item4": "PROJECT 04",
+        "item5": "PROJECT 05",
+        "item6": "PROJECT 06",
+        "item7": "PROJECT 07",
+        "item8": "PROJECT 08",
+        "item9": "PROJECT 09"
+    },
+    "links": {
+        "latestNews": "Our Latest News"
+    },
+    "search": {
+        "placeholder": "Search here..."
+    }
+}

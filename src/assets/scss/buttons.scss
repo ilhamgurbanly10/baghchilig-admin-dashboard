@@ -1,0 +1,277 @@
+.back-to-top-btn {
+    background-color: $yellow;
+    border: 0;
+    color: $white;
+    padding: 0;
+    width: 43px;
+    height: 43px;
+    @include SetPosition(fixed, initial, 1rem, 2rem, initial);
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s;
+    z-index: 999999999;
+}
+
+.back-to-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (hover: hover) {
+    .back-to-top-btn:hover {
+        background-color: $darkgrey;
+    }
+}
+
+// -white-iconic-btn-
+.white-iconic-btn {
+    color: $white !important;
+    background: none  !important;
+    padding: 0 !important;
+    border: 0  !important;
+    display: inline-block;
+    outline: 0 !important;
+    box-shadow: none !important;
+    transition: color .3s;
+}
+
+@media (hover: hover) {
+    .white-iconic-btn:hover {
+        color: $darkgrey2;
+    }
+}
+
+.white-iconic-btn:active {
+    color: $darkgrey2;
+}
+
+// -white-responsive-btn-
+.white-responsive-btn {
+    display: inline-block;
+    color: $grey !important;
+    transition: color .3s;
+    font-size: 14px;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    border-bottom: 1px solid $opacitiedLightgrey2;
+}
+
+.white-responsive-btn::before {
+    color: $grey !important;
+}
+
+@media (hover: hover) {
+    .white-responsive-btn:hover,
+    .white-responsive-btn:hover::before {
+        color: $yellow !important;
+    }
+}
+
+.white-responsive-btn:active,
+.white-responsive-btn.active,
+.white-responsive-btn:active::before,
+.white-responsive-btn.active::before {
+    color: $yellow !important;
+}
+
+@media (min-width: 992px) {
+    
+    .white-responsive-btn {
+        color: $white !important;
+    }
+    
+    .white-responsive-btn i {
+        font-size: 10px;
+        line-height: 10px;
+        position: relative;
+        top: -2px;
+    }
+    
+}
+
+// -white-iconic-btn-2-
+.white-iconic-btn-2 {
+    color: $white !important;
+    background-color: $darkgrey3;
+    border: 1px solid $white;
+    padding: 0;
+    font-size: 22px;
+    width: 45px !important;
+    height: 45px !important;
+    line-height: 45px !important;
+    outline: 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// -black-responsive-btn-
+.black-responsive-btn {
+    display: inline-block;
+    color: $grey !important;
+    background-color: $darkgrey4 !important;
+    transition: color .3s;
+    font-size: 14px;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    border-bottom: 1px solid $opacitiedLightgrey3;
+}
+
+.black-responsive-btn::before {
+    color: $grey !important;
+}
+
+@media (hover: hover) {
+    .black-responsive-btn:hover,
+    .black-responsive-btn:hover::before {
+        color: $yellow !important;
+    }
+}
+
+.black-responsive-btn:active,
+.black-responsive-btn:active::before,
+.black-responsive-btn.active::before {
+    color: $yellow !important;
+}
+
+@media (min-width: 992px) {
+    
+    .black-responsive-btn {
+        background-color: $white !important;
+        text-align: left;
+    }
+    
+    .black-responsive-btn i {
+        font-size: 10px;
+        line-height: 10px;
+        position: relative;
+        top: -2px;
+    }
+    
+}
+
+// -black-btn-
+.black-btn {
+    color: $darkgrey !important;
+    font-weight: 500;
+    font-size: 1.071em;
+    transition: color .3s;
+    display: inline-block;
+}
+
+@media (hover: hover) {
+    .black-btn:hover {
+        color: $yellow !important;
+    }
+}
+
+.black-btn:active {
+    color: $yellow !important;
+}
+
+// -yellow-btn-
+.yellow-btn {
+    background-color: $yellow;
+    color: $white !important;
+    padding: .5rem 1.2rem;
+    transition: background-color .3s, color .3s;
+    text-align: center;
+}
+
+@media (hover: hover) {
+    .yellow-btn:hover {
+        background-color: $darkgrey3;
+    }
+}
+
+.yellow-btn:active {
+    background-color: $darkgrey3;
+}
+
+.yellow-btn-white-style {
+    background-color: $white;
+    color: $darkgrey !important;
+}
+
+
+@media (hover: hover) {
+    .yellow-btn-white-style:hover {
+        background-color: $darkgrey;
+        color: $white !important;
+    }
+}
+
+.yellow-btn-white-style:active {
+    background-color: $darkgrey;
+    color: $white !important;
+}
+
+// -show-iconic-btn-on-hover-
+.show-iconic-btn-on-hover {
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.show-iconic-btn-on-hover-parent:hover .show-iconic-btn-on-hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+// -grey-btn-
+.grey-btn {
+    padding: 0;
+    display: inline-block;
+    border: 0;
+    outline: 0 !important;
+    color: $grey;
+    margin: 0;
+    transition: color .3s;
+}
+
+@media (hover: hover) {
+    .grey-btn:hover {
+        color: $yellow !important;
+    }
+}
+
+.grey-btn:active {
+    color: $yellow !important;
+}
+
+.grey-btn i {
+    color: $darkgrey3 !important;
+    margin-right: .8rem;
+}
+
+// -black-iconic-btn-
+.black-iconic-btn {
+    background-color: $darkgrey6;
+    color: $white !important;
+    transition: background-color .3s, border-color .3s;
+    border: 1px solid $opacitiedLightgrey2;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+@media (hover: hover) {
+    .black-iconic-btn:hover {
+        background-color: $yellow;
+        border-color: $yellow;
+    }
+}
+
+.black-iconic-btn:active {
+    background-color: $yellow;
+    border-color: $yellow;
+}
+

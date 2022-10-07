@@ -1,0 +1,13 @@
+// -yellow-length-circle-
+.yellow-length-circle {
+    background-color: $yellow;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    color: $white;
+    font-size: 10px;
+    line-height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 2px;
+}

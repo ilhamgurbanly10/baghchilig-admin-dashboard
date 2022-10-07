@@ -1,0 +1,58 @@
+{
+    "titles": {
+        "subtotal": "Subtotal",
+        "title01": "Contractors & Construction Managers Since 2000",
+        "mainServices": "MAIN SERVICES",
+        "mainServicesTitle01": "Construction Consultant",
+        "mainServicesTitle02": "Architectural Design",
+        "mainServicesTitle03": "Electrical System",
+        "mainServicesTitle04": "General Contracting",
+        "mainServicesTitle05": "Reconstruction Services",
+        "mainServicesTitle06": "Plumbing Services",
+        "whatWeOffer": "WHAT WE OFFER",
+        "featuredWork": "FEATURED WORK",
+        "company": "The Construction Company",
+        "awesomeFacts": "AWESOME FACTS",
+        "ourPartners": "OUR PARTNERS",
+        "testimonials": "TESTIMONIALS",
+        "whyChooseUs": "WHY CHOOSE US?",
+        "aboutUs": "ABOUT US",
+        "companyLinks": "COMPANY LINKS",
+        "contactInfo": "CONTACT INFO",
+        "address": "Address",
+        "phone": "Phone",
+        "email": "E-mail"
+    },
+    "buttons": {
+        "viewCart": "VIEW CART",
+        "checkout": "CHECKOUT",
+        "learnMore": "LEARN MORE",
+        "getQuote": "GET A QUOTE",
+        "readMore": "READ MORE"
+    },
+    "texts": {
+        "mainServicesText": "Our goal is to provide the most ideal service for you. We guarantee a beautiful and healthy future with our services.",
+        "projectCompleted": "PROJECT COMPLETED",
+        "satisfiedClients": "SATISFIED CLIENTS",
+        "workersEmployed": "WORKERS EMPLOYED",
+        "rights": "CONSTRUCTION TEMPLATE © CODING BY ILHAM GURBANLY.",
+        "aboutUsText": "Building isn’t just a job. At the Aysu Construction Company, it is our passion. With every project we undertake, we set the bar high and provide the best people in the industry, with a true love of what we do to make our Customers’ vision a reality."
+    },
+    "links": {
+        "link01": "History",
+        "link02": "Services",
+        "link03": "Team & Awards",
+        "link04": "Delivery Methods",
+        "link05": "Community",
+        "link06": "Safety",
+        "link07": "News & Events",
+        "link08": "Sustainability",
+        "link09": "FAQ",
+        "link10": "Portfolio",
+        "link11": "Contact",
+        "link12": "UsShop"
+    }
+
+}
+
+     

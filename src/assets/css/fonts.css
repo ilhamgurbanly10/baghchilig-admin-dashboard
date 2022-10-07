@@ -1,0 +1,138 @@
+body {
+	font-size: 14px !important;
+}
+
+/* fonts */
+
+/* -montserrat- */
+@font-face {
+	font-family: "Montserrat Light";
+	src: url("../fonts/montserrat/Montserrat-Light.ttf")  format('truetype');
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("../fonts/montserrat/Montserrat-Regular.ttf")  format('truetype');
+	font-weight: normal; 
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("../fonts/montserrat/Montserrat-Bold.ttf")  format('truetype');
+    font-weight: bold; 
+}
+
+/* -opensans- */
+@font-face {
+	font-family: "Open Sans";
+	src: url("../fonts/open-sans/OpenSans-Regular.ttf")  format('truetype');
+}
+
+/* -nunito-sans- */
+@font-face {
+	font-family: "Nunito Sans Light";
+	src: url("../fonts/nunito-sans/NunitoSans-Light.ttf")  format('truetype');
+}
+
+@font-face {
+	font-family: "Nunito Sans";
+	src: url("../fonts/nunito-sans/NunitoSans-Regular.ttf")  format('truetype');
+	font-weight: normal; 
+}
+
+@font-face {
+	font-family: "Nunito Sans";
+	src: url("../fonts/nunito-sans/NunitoSans-Bold.ttf")  format('truetype');
+	font-weight: bold; 
+}
+
+/* -futura-pt- */
+@font-face {
+	font-family: "Futura PT Light";
+	src: url("../fonts/Futura-PT/FuturaPTLight.otf")  format('truetype');
+}
+
+@font-face {
+	font-family: "Futura PT";
+	src: url("../fonts/Futura-PT/FuturaPTMedium.otf")  format('truetype');
+	font-weight: normal; 
+}
+
+@font-face {
+	font-family: "Futura PT";
+	src: url("../fonts/Futura-PT/FuturaPTBold.otf")  format('truetype');
+	font-weight: bold; 
+}
+
+/* the-end-of-fonts */
+
+
+
+/* font-families */
+
+/* montserrat */
+.ff-montserrat, .white-responsive-btn, .black-responsive-btn, .black-btn, .yellow-btn,
+.white-bigger-title, .grey-title, .bigger-white-title-2 {
+    font-family: "Montserrat", sans-serif;
+}
+
+.ff-montserrat-light  {
+    font-family: "Montserrat Light", sans-serif;
+}
+
+/* opensans */
+.ff-opensans, .white-text, .input-1, .yellow-length-circle, .grey-text, 
+.white-bigger-text, .white-text-2 {
+    font-family: "Open Sans", sans-serif;
+}
+
+.ff-nunito-sans {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+.ff-nunito-sans-light  {
+    font-family: "Nunito Sans Light", sans-serif;
+}
+
+.ff-futura-pt  {
+    font-family: "Futura PT", sans-serif;
+}
+
+.ff-futura-pt-light  {
+    font-family: "Futura PT Light", sans-serif;
+}
+
+/* the-end-of-font-families */	
+
+
+/* sizes */
+
+.smaller-font {
+	font-size: 10px !important;
+}
+
+.small-font {
+	font-size: 12px !important;
+}
+
+.small-font-2 {
+	font-size: 14px !important;
+}
+
+.normal-font {
+	font-size: 16px !important;
+}
+
+.bigger-font {
+	font-size: 19px !important;
+}
+
+.bigger-font-2 {
+	font-size: 22px !important;
+}
+
+.bigger-line-height {
+	line-height: 25px !important;
+}
+
+/* the-end-of-sizes */

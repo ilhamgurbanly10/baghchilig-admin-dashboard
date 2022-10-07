@@ -1,0 +1,25 @@
+{
+    "titles": {
+        "title1": "Aktuelle Nachrichten",
+        "title2": "Gesponserte Nachrichten",
+        "title3": "Die heutigen Top-Highlights",
+        "title4": "Trend-Themen",
+        "title5": "Bekannter Beitrag",
+        "title6": "Verpassen Sie kein Update!"
+    },
+    "texts": {
+        "text1": "Erhalten Sie die neuesten Schlagzeilen und Updates, die ununterbrochen an Ihren Posteingang gesendet werden.",
+        "notFound": "Die Seite wurde nicht gefunden"
+    },
+    "errors": {
+        "emailRequired": "Bitte geben Sie ihre E-Mail-Adresse ein!",
+        "invalidEmail": "Ungültige E-Mail-Adresse!"
+    },
+    "forms": {
+        "emailPlaceholder": "Geben sie ihre E-Mail Adresse ein"
+    },
+    "links": {
+        "backToHome": "Zurück zur Startseite"
+    }
+
+}

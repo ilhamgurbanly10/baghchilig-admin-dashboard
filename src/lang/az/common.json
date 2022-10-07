@@ -1,0 +1,56 @@
+{
+    "titles": {
+        "subtotal": "Toplam Qiymət",
+        "title01": "2000-ci ildən Podratçılar və Tikinti Menecerləri",
+        "mainServices": "ƏSAS XİDMƏTLƏR",
+        "mainServicesTitle01": "Tikinti Üzrə Məsləhətçi",
+        "mainServicesTitle02": "Memarlıq Dizaynı",
+        "mainServicesTitle03": "Elektrik Sistemi",
+        "mainServicesTitle04": "Baş Podratçılıq",
+        "mainServicesTitle05": "Yenidənqurma Xidmətləri",
+        "mainServicesTitle06": "Santexnika Xidmətləri",
+        "whatWeOffer": "BİZ NƏ TƏKLİF EDİRİK",
+        "featuredWork": "SEÇİLMİŞ İŞLƏR",
+        "company": "Tikinti Şirkəti",
+        "awesomeFacts": "ƏLA FAKTLAR",
+        "ourPartners": "TƏRƏFDAŞLARIMIZ",
+        "testimonials": "REFERANSLAR",
+        "whyChooseUs": "NİYƏ BİZİ SEÇMƏK?",
+        "aboutUs": "HAQQIMIZDA",
+        "companyLinks": "ŞİRKƏTİN LİNKLƏRİ",
+        "contactInfo": "ƏLAQƏ MƏLUMATLARI",
+        "address": "Ünvan",
+        "phone": "Mobil",
+        "email": "E-poçt"
+    },
+    "buttons": {
+        "viewCart": "KARTA BAX",
+        "checkout": "KASSA",
+        "learnMore": "DAHA ARTIQ ÖYRƏN",
+        "getQuote": "TƏKLİF ALIN",
+        "readMore": "ƏTRAFLI OXU"
+    },
+    "texts": {
+        "mainServicesText": "Məqsədimiz sizin üçün ən ideal xidməti göstərməkdir.Gözəl və sağlam gələcəyə xidmətlərimiz ilə zəmanət veririrk.",
+        "projectCompleted": "TAMAMLANMIŞ LAYİHƏLƏR",
+        "satisfiedClients": "MƏMNUN MÜŞTƏRİLƏR",
+        "workersEmployed": "İŞƏ GÖTÜRÜLMÜŞLƏR",
+        "rights": "İNŞAAT TEMPLEYTİ © İLHAM QURBANLI TƏRƏFİNDƏN KODLAMA.",
+        "aboutUsText": "Tikinti sadəcə iş deyil. Aysu Tikinti şirkətində bu bizim tutqumuzdur. Həyata keçirdiyimiz hər bir layihə ilə biz yeniliklər yaradırıq və Müştərilərimizin vizyonunu reallaşdırmaq üçün etdiklərimizə əsl sevgi ilə sənayenin ən yaxşı insanlarını təqdim edirik."
+    },
+    "links": {
+        "link01": "Tarix",
+        "link02": "Xidmətlər",
+        "link03": "Komanda & Mükafatlar",
+        "link04": "Çatdırılma Üsulları",
+        "link05": "Cəmiyyət",
+        "link06": "Güvənlik",
+        "link07": "Xəbərlər & Tədbirlər",
+        "link08": "Davamlılıq",
+        "link09": "FAQ",
+        "link10": "Portfolio",
+        "link11": "Əlaqə",
+        "link12": "UsShop"
+    }
+
+}

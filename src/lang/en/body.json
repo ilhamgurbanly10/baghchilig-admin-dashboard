@@ -1,0 +1,26 @@
+{
+    "titles": {
+        "title1": "Breaking News",
+        "title2": "Sponsored News",
+        "title3": "Today's Top Highlights",
+        "title4": "Trending Topics",
+        "title5": "Popular Post",
+        "title6": "Never miss any Update!"
+    },
+    "texts": {
+        "text1": "Get the freshest headlines and updates sent uninterrupted to your inbox.",
+        "notFound": "Page is not found"
+    },
+    "errors": {
+        "emailRequired": "Please enter your email!",
+        "invalidEmail": "Invalid Email Address!"
+    },
+    "forms": {
+        "emailPlaceholder": "Enter your email"
+    },
+    "links": {
+        "backToHome": "Back to home page"
+    }
+    
+
+}

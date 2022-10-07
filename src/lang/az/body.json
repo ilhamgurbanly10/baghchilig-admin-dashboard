@@ -1,0 +1,25 @@
+{
+    "titles": {
+        "title1": "Son Xəbərlər",
+        "title2": "Sponsorlu Xəbərlər",
+        "title3": "Bu Günün Ən Maraqlı Məqamları",
+        "title4": "Trend Mövzular",
+        "title5": "Tanınmış Post",
+        "title6": "Heç bir yeniləməni qaçırmayın!"
+    },
+    "texts": {
+        "text1": "Ən təzə başlıqları və yenilikləri inboksunuzda fasiləsiz qəbul edin.",
+        "notFound": "Səhifə tapılmadı"
+    },
+    "errors": {
+        "emailRequired": "Zəhmət olmasa e-poçtunuzu daxil edin!",
+        "invalidEmail": "E-mail ünvanı səhvdir!"
+    },
+    "forms": {
+        "emailPlaceholder": "E-poçtunuzu daxil edin"
+    },
+    "links": {
+        "backToHome": "Ana səhifəyə qayıt"
+    }
+
+}

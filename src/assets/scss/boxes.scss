@@ -1,0 +1,59 @@
+// -yellow-icon-box-
+.yellow-icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px !important;
+    height: 70px;
+    color: $white;
+    background-color: $yellow;
+    border-radius: 100%;
+    border: 2px solid $yellow;
+    transition: background-color .3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.yellow-icon-box-icon {
+    position: absolute;
+    width: 40px;
+    text-align: center;
+    color: $white;
+    transition: left .3s;
+    font-size: 30px !important;
+    left: calc(50% - 20px);
+}
+
+.yellow-icon-box-hidden-icon {
+    display: none;
+    color: $yellow !important;
+    left: -120%;
+}
+
+@media (hover: hover) {
+
+    .yellow-icon-box-parent:hover .yellow-icon-box {
+        background-color: $white;
+    }
+
+    .yellow-icon-box-parent:hover .yellow-icon-box-icon:not(.yellow-icon-box-hidden-icon) {
+        left: 120%;
+    }
+
+    .yellow-icon-box-parent:hover .yellow-icon-box-hidden-icon {
+        left: calc(50% - 20px)
+    }
+
+}
+
+.yellow-icon-box-parent:active .yellow-icon-box {
+    background-color: $white;
+}
+
+.yellow-icon-box-parent:active .yellow-icon-box-icon:not(.yellow-icon-box-hidden-icon) {
+    left: 120%;
+}
+
+.yellow-icon-box-parent:active .yellow-icon-box-hidden-icon {
+    left: calc(50% - 20px)
+}
