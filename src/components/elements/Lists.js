@@ -366,7 +366,7 @@ export const AboutUsList = () => {
     return (
         <div className="about-us-list col-12 col-lg-4 pe-lg-2 mt-5 mt-lg-0">
              
-             <h3 className="about-us-list-title yellow-underline underline-left grey-title white-color">
+             <h3 className="about-us-list-title yellow-underline underline-left white-title-2">
                 {t('titles.aboutUs')}
             </h3>
 
@@ -388,7 +388,7 @@ export const CompanyLinksList = () => {
     return (
         <div className="company-links col-12 col-lg-4 mt-5 mt-lg-0">
              
-            <h3 className="company-links-title yellow-underline underline-left grey-title white-color">
+            <h3 className="company-links-title yellow-underline underline-left white-title-2">
                 {t('titles.companyLinks')}
             </h3>
 
@@ -468,7 +468,7 @@ export const ContactInfoList = () => {
     return (
         <div className="contact-info col-12 col-lg-4 mt-5 mt-lg-0">
              
-             <h3 className="contact-info-title yellow-underline underline-left grey-title white-color">
+             <h3 className="contact-info-title yellow-underline underline-left white-title-2">
                 {t('titles.contactInfo')}
             </h3>
 

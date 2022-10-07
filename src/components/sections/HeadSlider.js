@@ -46,7 +46,7 @@ const HeadSlider = (props) => {
                     
                 </MyCarousel>
 
-                <div className="slider-progress-line"></div>
+                <div className="slider-progress-line show"></div>
 
                 <a href="#mainServices" className="white-iconic-btn yellow-color-on-hover down-animation">
                     <i className="fa fa-chevron-down"></i>

@@ -45,3 +45,16 @@
     position: relative;
     bottom: 2px;
 }
+
+// -white-title-2-
+.white-title-2 {
+    color: $white;
+    margin: 0;
+    font-size: 1.142em;
+}
+
+@media (min-width: 992px) {
+    .white-title-2 {
+        font-size: 1.428em;
+    }
+}

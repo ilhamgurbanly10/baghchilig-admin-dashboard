@@ -11,7 +11,11 @@
   	animation-iteration-count: infinite;
   	animation-duration: 6s;
   	animation-delay: 0s;
-  	animation-name: sliderProgressLine;
+	animation-name: none;
+}
+
+.slider-progress-line.show {
+	animation-name: sliderProgressLine;
 }
 
 @keyframes sliderProgressLine { 
