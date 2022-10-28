@@ -1,60 +1,8 @@
-// -white-bigger-title-
 .white-bigger-title {
     color: $white;
-    font-size: 28px;
+    margin: 0;
     font-weight: bold;
-    margin: 0;
-}
-
-@media (min-width: 992px) {
-    .white-bigger-title {
-        font-size: 80px;
-    }
-}
-
-// -grey-title-
-.grey-title {
-    font-size: 1.758em;
-    color: $darkgrey;
-    margin: 0;
-}
-
-// -white-title-
-.white-title {
-    font-size: 18px;
-    color: $white;
-    margin: 0;
-    font-family: Verdana;
-}
-
-@media (min-width: 992px) {
-    .white-title {
-        font-size: 25px;
-    }
-}
-
-// -bigger-white-title-2
-.bigger-white-title-2 {
-    font-size: 40px;
-    color: $white;
-    margin: 0;
-}
-
-.bigger-white-title-2 span {
-    display: inline-block;
-    position: relative;
-    bottom: 2px;
-}
-
-// -white-title-2-
-.white-title-2 {
-    color: $white;
-    margin: 0;
-    font-size: 1.142em;
-}
-
-@media (min-width: 992px) {
-    .white-title-2 {
-        font-size: 1.428em;
-    }
+    font-size: calc(25px + 1.7vw);
+    letter-spacing: 3px;
+    text-align: center;
 }

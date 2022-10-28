@@ -1,0 +1,14 @@
+{
+    "pages": {
+        "home": "Startseite"
+    },
+    "titles": {
+        "title01": "Lassen Sie uns Leben in Ihren Garten bringen."
+    },
+    "buttons": {
+        "aboutUs": "Über Uns",
+        "freeQuote": "Kostenloses Angebot",
+        "contactUs": "Kontaktiere Uns"
+    }
+
+}

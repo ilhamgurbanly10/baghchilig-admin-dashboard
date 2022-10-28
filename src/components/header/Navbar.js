@@ -1,11 +1,9 @@
 import { logo } from '../files/Images';
 import {useEffect, useRef} from 'react';
 import { NavLink } from "react-router-dom";
-import closeNavbarNav from '../navbar/Navbar';
+// import closeNavbarNav from '../navbar/Navbar';
 import {useTranslation} from "react-i18next";
 import NavbarNav from './NavbarNav';
-import SearchForm from '../forms/SearchForm';
-import {Cart} from '../elements/Dropdowns';
 import {connect} from 'react-redux';
 
 
@@ -16,11 +14,11 @@ const Navbar = (props) => {
     const {cartProducts} = props;
 
     useEffect(() => {
-      const toggler = document.querySelector('.navbar-toggler');
-      let buttons = document.querySelectorAll('.nav-link:not(.dropdown-toggle)');
-      const dropdownButtons = document.querySelectorAll('.nav-item .dropdown-item');
-      buttons = [...buttons,...dropdownButtons];
-      closeNavbarNav(toggler, buttons);
+      // const toggler = document.querySelector('.navbar-toggler');
+      // let buttons = document.querySelectorAll('.nav-link:not(.dropdown-toggle)');
+      // const dropdownButtons = document.querySelectorAll('.nav-item .dropdown-item');
+      // buttons = [...buttons,...dropdownButtons];
+      // closeNavbarNav(toggler, buttons);
     }, []);
 
     return (
@@ -39,13 +37,7 @@ const Navbar = (props) => {
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-line"></span>
             </button>
-
-            <SearchForm/>
-
-            <Cart placement="bottomRight" products={cartProducts}/>
-
            
-
           </div>
 
         </nav>

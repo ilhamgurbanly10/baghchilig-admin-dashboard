@@ -1,52 +1,5 @@
-.mt-6 {
-    margin-top: 150px;
-}
-
-.mt-7 {
-    margin-top: 90px;
-}
-
-.mt-8 {
-    margin-top: 180px;
-}
-
-.mt-9 {
-    margin-top: 2rem !important;
-}
-
-.p-6 {
-    padding: 1.5rem !important;
-}
-
-@media (min-width: 992px) {
-    .p-6 {
-        padding: 2rem 2.5rem !important;
-    }
-
-    .pe-lg-6 {
-        padding-right: 2rem !important;
-    }
-}
-
+// -paddings-
 .py-6 {
-    padding-top: .9rem !important;
-    padding-bottom: .9rem !important;
-}
-
-.py-7 {
-    padding-top: calc(4rem + 1vw);
-    padding-bottom: calc(4rem + 1vw);
-}
-
-.py-8 {
-    padding-top: calc(2.5rem + 1.5vw);
-    padding-bottom: calc(2.5rem + 1.5vw);
-}
-
-.top-1 {
-    top: 1rem;
-}
-
-.right-1 {
-    right: 1.2rem;
+    padding-top: .8rem !important;
+    padding-bottom: .8rem !important;
 }

@@ -1,24 +1,25 @@
-import HeadSlider from '../components/sections/HeadSlider';
-import MainServices from '../components/sections/MainServices';
-import FeaturedWorkSlider from '../components/sections/FeaturedWork';
-import AboutUs from '../components/sections/AboutUs';
-import OfferingSlider from '../components/sections/OfferingSlider';
-import AwesomeFacts from '../components/sections/AwesomeFacts';
-import Testimonials from '../components/sections/Testimonials';
+import Main from '../components/sections/Main';
+import {Helmet} from "react-helmet";
+import {useTranslation} from "react-i18next";
+
 
 
 function Home() {
+
+    const {t, i18n} = useTranslation('common');
+
     return (
       <>
-        <HeadSlider/>
-        <MainServices/>
-        <FeaturedWorkSlider/>
-        <AboutUs/>
-        <OfferingSlider/>
-        <AwesomeFacts/>
-        <Testimonials/>
+
+        <Helmet>
+            <title>Bağçılıq - {t('pages.home')}</title>
+        </Helmet>
+
+        <Main/>
+        
       </>  
     );
+
 }
   
 export default Home;

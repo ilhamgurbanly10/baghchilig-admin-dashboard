@@ -10,7 +10,7 @@ import './assets/scss/library.scss';
 import './assets/css/flash/flash.css';
 import './assets/css/ant-design.css';
 import '../node_modules/font-awesome/css/font-awesome.min.css'; 
-import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
+import 'antd/dist/antd.css';
 
 import {I18nextProvider} from "react-i18next";
 import i18next from "i18next";

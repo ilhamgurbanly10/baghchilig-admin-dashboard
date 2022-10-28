@@ -1,6 +1,6 @@
 // -ant-collapse-style-
 .ant-collapse-style {
-    background-color: $white  !important;
+    background-color: white  !important;
 }
 
 .ant-collapse-style .ant-collapse-item {
@@ -8,7 +8,7 @@
 } 
 
 .ant-collapse-style  .ant-collapse-header {
-    background-color: $lightgrey !important;
+    background-color: lightgrey !important;
     padding: 1rem 1rem 1rem 3rem !important;
     flex-direction: row-reverse;
     position: relative;
@@ -38,8 +38,8 @@
 
 // -activation-
 .ant-collapse-style .ant-collapse-item-active .ant-collapse-header {
-    background-color: $yellow !important;
-    color: $white !important;
+    background-color: yellow !important;
+    color: #fff !important;
 }
 
 .ant-collapse-style .ant-collapse-item-active .ant-collapse-header::before {

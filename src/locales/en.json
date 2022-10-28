@@ -1,0 +1,14 @@
+{
+    "pages": {
+        "home": "Home Page"
+    },
+    "titles": {
+        "title01": "Let us bring life to your garden."
+    },
+    "buttons": {
+        "aboutUs": "About Us",
+        "freeQuote": "Free Quote",
+        "contactUs": "Contact Us"
+    }
+
+}

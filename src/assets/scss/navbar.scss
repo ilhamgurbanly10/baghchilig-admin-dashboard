@@ -2,7 +2,7 @@
 // navbar-animation
 .header {
     transition: all .5s;
-    background-color: $white;
+    background-color: transparent;
 	z-index: 1000;
 }
 
@@ -54,7 +54,7 @@
 	.navbar-toggler-line::after {
 		width: 25px;
 	    height: 3.2px;
-	    background-color: $white;
+	    background-color: #fff;
 	    backface-visibility: hidden;
 	    border-radius: 0;
 	}
@@ -109,7 +109,7 @@
 
 	// -mobile-navbar-collapse-
 	.mobile-navbar-collapse {
-		background-color: $darkgrey3;
+		background-color: darkgrey;
 		position: absolute;
 		top: 100%;
 		left: -100%;

@@ -1,8 +1,8 @@
 
 import React, {useRef, useEffect} from "react";
 import Navbar from './Navbar';
-import HeadContainer from './HeadContainer';
 import flashNavbarAnimation from '../../assets/js/library.js';
+// import { BackToTopBtn } from './components/elements/Buttons';
 
 const Header = () => {
 
@@ -15,13 +15,12 @@ const Header = () => {
   return (
     <>
       <header ref={header} className="header position-fixed start-0 top-0 w-100 pattern">
-
-        <HeadContainer/>
         
         <Navbar/>
 
       </header>  
 
+      {/* <BackToTopBtn/> */}
     </>
   )
 };
