@@ -121,3 +121,104 @@
 .white-iconic-btn:active {
     color: $green !important;
 }
+
+// -white-toggler-
+.white-toggler .navbar-toggler-line::before,
+.white-toggler .navbar-toggler-line,
+.white-toggler .navbar-toggler-line::after {
+    width: 27px;
+    height: 1.5px;
+}
+
+.white-toggler .navbar-toggler-line::before,
+.white-toggler .navbar-toggler-line::after {
+    top: -9px;
+}   
+
+.white-toggler .navbar-toggler-line::after {
+    top: 9px;
+}
+
+// -white-responsive-btn-
+.white-responsive-btn {
+    color: $white !important;
+    font-size: 15px;
+    text-align: center;
+    padding: 1rem;
+    background-color: transparent;
+    transition: color .3s;
+}
+
+@media (hover: hover) {
+    .white-responsive-btn:hover {
+        color: $green !important;
+    }
+}
+
+.white-responsive-btn:active {
+    color: $green !important;
+}
+
+@media (min-width: 992px) {
+
+    .white-responsive-btn {
+       padding: 2rem 0 !important;
+    }
+
+    .white-responsive-btn.active {
+        border-bottom: 2px solid $green;
+    }
+
+}
+
+// -white-responsive-btn-2-
+.white-responsive-btn-2 {
+    background-color: $white !important;
+    padding: 1.1rem 0;
+    transition: color .3s;
+    color: $darkgrey !important;
+    font-size: 13px;
+}
+
+@media (hover: hover) {
+
+    .white-responsive-btn-2:hover {
+        color: $green !important;
+    }
+
+}
+
+.white-responsive-btn-2:active {
+    color: $green !important;
+}
+
+@media (min-width: 992px) {
+
+    .white-responsive-btn-2 {
+        position: relative;
+        background-color: $white !important;
+        border-bottom: 1px solid lightgrey;
+    }
+
+    .white-responsive-btn-2::before {
+        content: " ";
+        position: absolute;
+        left: -17px;
+        top: calc(50% - 1px);
+        height: 2px;
+        width: 0;
+        background-color: $green;
+        transition: width .3s;
+    }
+
+    @media (hover: hover) {
+        .white-responsive-btn-2:hover::before {
+            width: 10px;
+        }
+    }
+
+    .white-responsive-btn-2:active::before {
+        width: 10px;
+    }
+
+}

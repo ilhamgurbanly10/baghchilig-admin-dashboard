@@ -74,7 +74,8 @@ body {
 }
 
 /* poppins */
-.ff-poppins, .white-bigger-title, .btn-1, .white-title  {
+.ff-poppins, .white-bigger-title, .btn-1, .white-title, .white-responsive-btn,
+.white-responsive-btn-2  {
     font-family: "Poppins", sans-serif;
 }
 

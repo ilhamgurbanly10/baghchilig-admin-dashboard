@@ -23,9 +23,13 @@ const Navbar = (props) => {
     }, []);
 
     return (
-        <nav className="navbar navbar-expand-lg flex-wrap m-0 py-2 position-relative white-border-bottom">
+        <nav className="navbar navbar-expand-lg flex-wrap m-0 py-2 py-lg-0 position-relative white-lg-border-bottom">
 
-            <div className="navbar-container d-flex flex-wrap justify-content-between align-items-center align-content-center w-100">
+            <div className="navbar-container d-flex flex-wrap justify-content-start justify-content-lg-between align-items-center align-content-center w-100">
+
+                <button className="navbar-toggler me-3 white-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-line"></span>
+                </button>
 
                 <NavLink className="navbar-brand d-block" to="/">
                     <img src={logo} alt="Navbar Brand" className="brand-img" />
@@ -38,10 +42,6 @@ const Navbar = (props) => {
                 <WhiteBtn url="/about-us" className="d-none d-lg-inline-block btn-1-reverse btn-1-small ms-5">
                     {t('buttons.contactUs')}
                 </WhiteBtn>
-
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-line"></span>
-                </button>
             
             </div>
 

@@ -5,7 +5,7 @@ import {useEffect, useRef} from 'react';
 
 const NavbarNav = (props) => {
 
-    const {t, i18n} = useTranslation('header');
+    const {t, i18n} = useTranslation('common');
 
     const closer = useRef();
 
@@ -21,72 +21,48 @@ const NavbarNav = (props) => {
                 <i className="fa fa-times"></i>
             </button>
 
-            <li className="nav-item me-lg-3">
+            <li className="nav-item me-lg-5">
                 <NavLink className={isActive => "nav-link white-responsive-btn" + (isActive.isActive ? " active" : "") } to="/">
-                    {t('menu.item1')}
+                    {t('navbarNav.menu01')}
                 </NavLink>
             </li>
 
-            <li className="nav-item me-lg-3 dropdown fl-dropdown-lg-hover fl-md-dropdown fl-not-dropdown-arrow">
+            <li className="nav-item me-lg-5 dropdown fl-dropdown-lg-hover fl-md-dropdown fl-not-dropdown-arrow">
 
                 <a className="nav-link dropdown-toggle white-responsive-btn" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    {t('menu.item2')}
-                    <i className="fa fa-chevron-down ms-2 d-none d-lg-inline-block"></i>
+                    {t('navbarNav.menu02')}
+                    {/* <i className="fa fa-chevron-down ms-2 d-none d-lg-inline-block"></i> */}
                 </a>
                 
-                <ul className="dropdown-menu border-0 rounded-0 p-0">
+                <ul className="dropdown-menu border-0 rounded-0 py-0 px-4">
                 
                     <li>
-                        <NavLink className="dropdown-item black-responsive-btn" to="/">
-                            {t('subMenu1.item1')}
+                        <NavLink className="dropdown-item white-responsive-btn-2" to="/">
+                            {t('navbarNav.subMenu01')}
                         </NavLink>
                     </li>
 
                     <li>
-                        <NavLink className="dropdown-item black-responsive-btn" to="/">
-                            {t('subMenu1.item2')}
+                        <NavLink className="dropdown-item white-responsive-btn-2" to="/">
+                            {t('navbarNav.subMenu02')}
                         </NavLink>
                     </li>
 
                     <li>
-                        <NavLink className="dropdown-item black-responsive-btn" to="/">
-                            {t('subMenu1.item3')}
+                        <NavLink className="dropdown-item white-responsive-btn-2" to="/">
+                            {t('navbarNav.subMenu03')}
                         </NavLink>
                     </li>
 
                     <li>
-                        <NavLink className="dropdown-item black-responsive-btn" to="/">
-                            {t('subMenu1.item4')}
+                        <NavLink className="dropdown-item white-responsive-btn-2" to="/">
+                            {t('navbarNav.subMenu04')}
                         </NavLink>
                     </li>
 
                     <li>
-                        <NavLink className="dropdown-item black-responsive-btn" to="/">
-                            {t('subMenu1.item5')}
-                        </NavLink>
-                    </li>
-
-                    <li>
-                        <NavLink className="dropdown-item black-responsive-btn" to="/">
-                            {t('subMenu1.item6')}
-                        </NavLink>
-                    </li>
-
-                    <li>
-                        <NavLink className="dropdown-item black-responsive-btn" to="/">
-                            {t('subMenu1.item7')}
-                        </NavLink>
-                    </li>
-
-                    <li>
-                        <NavLink className="dropdown-item black-responsive-btn" to="/">
-                            {t('subMenu1.item8')}
-                        </NavLink>
-                    </li>
-
-                    <li>
-                        <NavLink className="dropdown-item black-responsive-btn border-0" to="/">
-                            {t('subMenu1.item9')}
+                        <NavLink className="dropdown-item white-responsive-btn-2" to="/">
+                            {t('navbarNav.subMenu05')}
                         </NavLink>
                     </li>
 
@@ -94,30 +70,56 @@ const NavbarNav = (props) => {
 
             </li>
 
-            <li className="nav-item me-lg-3">
-                <NavLink className={isActive => "nav-link white-responsive-btn" + (isActive.isActive ? " active" : "") } to="/gallery">
-                {t('menu.item3')}
-                </NavLink>
+            <li className="nav-item me-lg-5 dropdown fl-dropdown-lg-hover fl-md-dropdown fl-not-dropdown-arrow">
+
+                <a className="nav-link dropdown-toggle white-responsive-btn" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    {t('navbarNav.menu03')}
+                    {/* <i className="fa fa-chevron-down ms-2 d-none d-lg-inline-block"></i> */}
+                </a>
+
+                <ul className="dropdown-menu border-0 rounded-0 py-0 px-4">
+
+                    <li>
+                        <NavLink className="dropdown-item white-responsive-btn-2" to="/">
+                            {t('navbarNav.subMenu06')}
+                        </NavLink>
+                    </li>
+
+                    <li>
+                        <NavLink className="dropdown-item white-responsive-btn-2" to="/">
+                            {t('navbarNav.subMenu07')}
+                        </NavLink>
+                    </li>
+
+                    <li>
+                        <NavLink className="dropdown-item white-responsive-btn-2" to="/">
+                            {t('navbarNav.subMenu08')}
+                        </NavLink>
+                    </li>
+
+                </ul>
+
             </li>
 
-            <li className="nav-item me-lg-3">
-                <NavLink className={isActive => "nav-link white-responsive-btn " + (isActive.isActive ? " active" : "") } to="/about-us">
-                {t('menu.item4')}
-                </NavLink>
-            </li>
-
-            <li className="nav-item me-lg-3">
+            <li className="nav-item me-lg-5">
                 <NavLink className={isActive => "nav-link white-responsive-btn" + (isActive.isActive ? " active" : "") } to="/blog">
-                {t('menu.item5')}
+                    {t('navbarNav.menu04')}
+                </NavLink>
+            </li>
+
+            <li className="nav-item me-lg-5">
+                <NavLink className={isActive => "nav-link white-responsive-btn" + (isActive.isActive ? " active" : "") } to="/shop">
+                    {t('navbarNav.menu05')}
                 </NavLink>
             </li>
 
             <li className="nav-item">
-                <NavLink className={isActive => "nav-link white-responsive-btn border-0" + (isActive.isActive ? " active" : "") } to="/contact">
-                {t('menu.item6')}
+                <NavLink className={isActive => "nav-link white-responsive-btn" + (isActive.isActive ? " active" : "") } to="/elements">
+                    {t('navbarNav.menu06')}
                 </NavLink>
             </li>
 
+            
         </ul> 
     )
 
