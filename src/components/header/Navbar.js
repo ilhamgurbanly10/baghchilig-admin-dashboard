@@ -4,12 +4,13 @@ import { NavLink } from "react-router-dom";
 // import closeNavbarNav from '../navbar/Navbar';
 import {useTranslation} from "react-i18next";
 import NavbarNav from './NavbarNav';
+import WhiteBtn from '../elements/buttons/WhiteBtn';
 import {connect} from 'react-redux';
 
 
 const Navbar = (props) => {
 
-    const {t, i18n} = useTranslation('header');
+    const {t, i18n} = useTranslation('common');
 
     const {cartProducts} = props;
 
@@ -22,23 +23,27 @@ const Navbar = (props) => {
     }, []);
 
     return (
-        <nav className="navbar navbar-expand-lg flex-wrap m-0 py-1 py-lg-3 position-relative bigger-container">
+        <nav className="navbar navbar-expand-lg flex-wrap m-0 py-2 position-relative white-border-bottom">
 
-          <div className="navbar-container d-flex flex-wrap justify-content-between align-items-center align-content-center w-100">
+            <div className="navbar-container d-flex flex-wrap justify-content-between align-items-center align-content-center w-100">
 
-            <NavLink className="navbar-brand d-block" to="/">
-              <img src={logo} alt="Navbar Brand" className="brand-img-2" />
-            </NavLink>
+                <NavLink className="navbar-brand d-block" to="/">
+                    <img src={logo} alt="Navbar Brand" className="brand-img" />
+                </NavLink>
+                
+                <div className="collapse navbar-collapse mobile-navbar-collapse flex-grow-0 ms-auto"  id="navbarSupportedContent">
+                    <NavbarNav/>     
+                </div>
+
+                <WhiteBtn url="/about-us" className="d-none d-lg-inline-block btn-1-reverse btn-1-small ms-5">
+                    {t('buttons.contactUs')}
+                </WhiteBtn>
+
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-line"></span>
+                </button>
             
-            <div className="collapse navbar-collapse mobile-navbar-collapse flex-grow-0 ms-auto"  id="navbarSupportedContent">
-              <NavbarNav/>     
             </div>
-
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-line"></span>
-            </button>
-           
-          </div>
 
         </nav>
     )

@@ -3,12 +3,31 @@
         "home": "Startseite"
     },
     "titles": {
-        "title01": "Lassen Sie uns Leben in Ihren Garten bringen."
+        "title01": "Lassen Sie uns Leben in Ihren Garten bringen.",
+        "phone": "Telefonnummer",
+        "mail": "Mail",
+        "socialMedia": "Sozial Media"
     },
     "buttons": {
         "aboutUs": "Über Uns",
         "freeQuote": "Kostenloses Angebot",
         "contactUs": "Kontaktiere Uns"
+    },
+    "navbarNav": {
+        "menu01": "Stertseite",
+        "menu02": "Über Uns",
+        "menu03": "Projekte",
+        "menu04": "Blog",
+        "menu05": "Einkaufen",
+        "menu06": "Elemente",
+        "subMenu01": "Über Uns",
+        "subMenu02": "Mannschaft",
+        "subMenu03": "Referenzen",
+        "subMenu04": "Geschichte",
+        "subMenu05": "Bedienungen",
+        "subMenu06": "Alle Projekte",
+        "subMenu07": "Neue Projekte",
+        "subMenu08": "Zukünftige Projekte"
     }
 
 }

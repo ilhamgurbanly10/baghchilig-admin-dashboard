@@ -3,12 +3,31 @@
         "home": "Ana Səhifə"
     },
     "titles": {
-        "title01": "Gəlin bağınıza həyat gətirək."
+        "title01": "Gəlin bağınıza həyat gətirək.",
+        "phone": "Telefon",
+        "mail": "E-Poçt",
+        "socialMedia": "Sosial Media"
     },
     "buttons": {
         "aboutUs": "Haqqımızda",
         "freeQuote": "Pulsuz Sitat",
         "contactUs": "Bizimlə Əlaqə"
+    },
+    "navbarNav": {
+        "menu01": "Ana Səhifə",
+        "menu02": "Haqqımızda",
+        "menu03": "Layihələr",
+        "menu04": "Bloq",
+        "menu05": "Alış-Veriş",
+        "menu06": "Elementlər",
+        "subMenu01": "Haqqımızda",
+        "subMenu02": "Komanda",
+        "subMenu03": "Rəylər",
+        "subMenu04": "Tarix",
+        "subMenu05": "Xidmətlər",
+        "subMenu06": "Bütün Layihələr",
+        "subMenu07": "Yeni Layihələr",
+        "subMenu08": "Gələcək Layihələr"
     }
 
 }

@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <>
-      <header ref={header} className="header position-fixed start-0 top-0 w-100 pattern">
+      <header ref={header} className="header position-fixed start-0 top-0 w-100 container-main">
         
         <Navbar/>
 

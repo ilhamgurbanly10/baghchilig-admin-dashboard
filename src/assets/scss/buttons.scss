@@ -93,8 +93,31 @@
     left: 50%;
 }
 
+.btn-1-small {
+    padding: .9rem 2rem;
+    outline-width: 1px !important;
+    font-size: 14px !important;
+}
+
 @media (min-width: 992px) {
     .btn-1 {
         font-size: 18px;
     }    
+}
+
+// -white-iconic-btn-
+.white-iconic-btn {
+    color: $white !important;
+    font-size: 22px;
+    line-height: 22px;
+}
+
+@media (hover: hover) {
+    .white-iconic-btn:hover {
+        color: $green !important;
+    }
+}
+
+.white-iconic-btn:active {
+    color: $green !important;
 }

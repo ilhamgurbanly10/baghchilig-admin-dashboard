@@ -3,12 +3,31 @@
         "home": "Home Page"
     },
     "titles": {
-        "title01": "Let us bring life to your garden."
+        "title01": "Let us bring life to your garden.",
+        "phone": "Phone",
+        "mail": "Mail",
+        "socialMedia": "Social Media"
     },
     "buttons": {
         "aboutUs": "About Us",
         "freeQuote": "Free Quote",
         "contactUs": "Contact Us"
+    },
+    "navbarNav": {
+        "menu01": "Home",
+        "menu02": "About",
+        "menu03": "Projects",
+        "menu04": "Blog",
+        "menu05": "Shop",
+        "menu06": "Elements",
+        "subMenu01": "About",
+        "subMenu02": "Team",
+        "subMenu03": "Testimonials",
+        "subMenu04": "History",
+        "subMenu05": "Services",
+        "subMenu06": "All Projects",
+        "subMenu07": "New Projects",
+        "subMenu08": "Future Projects"
     }
 
 }
