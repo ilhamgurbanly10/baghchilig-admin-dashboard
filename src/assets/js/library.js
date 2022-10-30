@@ -28,4 +28,9 @@ export function flashNavbarAnimation(nav) {
 
 export default flashNavbarAnimation;
 
+export const closeNavbarNav = (toggler, buttons) => {
+    buttons.forEach(btn => btn.onclick = function() { toggler.click(); });
+}
+
+
 

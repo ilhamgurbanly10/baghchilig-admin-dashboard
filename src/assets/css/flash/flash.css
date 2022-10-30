@@ -51,11 +51,12 @@
 	} */
 
 	.fl-md-dropdown .nav-link::before {
-		content: "\f067";
+		content: "\f078";
 		font-family: fontAwesome;
-		color: #eb0029;
-		font-size: 14px;
-		float: right;
+		color: #fff;
+		font-size: 12px;
+		position: absolute;
+		right: 1rem;
 		transition: all .5s;
 		border: 0 !important;
 	}
@@ -63,7 +64,7 @@
 	.fl-md-dropdown .nav-link[aria-expanded="true"]:before {
 		transform: rotate(360deg);
 		-webkit-transform: rotate(360deg);
-		content: "\f068";
+		content: "\f077";
 	}
 
 }

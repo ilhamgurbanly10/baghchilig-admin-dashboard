@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import {useEffect, useRef} from 'react';
+import WhiteBtn from '../elements/buttons/WhiteBtn';
+import { logo } from '../files/Images';
 
 
 const NavbarNav = (props) => {
@@ -15,11 +17,17 @@ const NavbarNav = (props) => {
     }, []);
 
     return (
-        <ul className="navbar-nav align-items-lg-center pt-2 p-lg-0 align-content-lg-center">
+        <ul className="navbar-nav align-items-lg-center pt-2 p-lg-0 align-content-lg-center bg-darkgrey bg-lg-transparent">
 
-            <button type="button" ref={closer} className="white-iconic-btn-2 navbar-closer ms-auto mt-3 me-3 mb-4 d-lg-none">
+            <button type="button" ref={closer} className="white-iconic-btn fl-iconic-btn navbar-closer position-absolute mt-2 end-0 me-3 d-lg-none">
                 <i className="fa fa-times"></i>
             </button>
+
+            <li className="nav-item mt-4 mb-3 d-lg-none text-center">
+                <NavLink className="navbar-brand d-block" to="/">
+                    <img src={logo} alt="Navbar Brand" className="brand-img" />
+                </NavLink>
+            </li>
 
             <li className="nav-item me-lg-5">
                 <NavLink className={isActive => "nav-link white-responsive-btn" + (isActive.isActive ? " active" : "") } to="/">
@@ -117,6 +125,14 @@ const NavbarNav = (props) => {
                 <NavLink className={isActive => "nav-link white-responsive-btn" + (isActive.isActive ? " active" : "") } to="/elements">
                     {t('navbarNav.menu06')}
                 </NavLink>
+            </li>
+
+            <li className="nav-item d-lg-none mt-4 mb-4">
+
+                <WhiteBtn url="/about-us" className="btn-1-reverse btn-1-small ms-5">
+                        {t('buttons.contactUs')}
+                </WhiteBtn>
+
             </li>
 
             

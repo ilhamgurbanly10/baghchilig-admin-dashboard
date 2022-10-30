@@ -12,7 +12,7 @@
 
 .header.is-scrolled  {
     top: 0 !important;
-	background-color: rgba(0, 0, 0, .7) !important;
+	background-color: rgba(0, 0, 0, .3) !important;
 }
 
 .header.is-scrolled .head-container {
@@ -108,7 +108,7 @@
 	}
 
 	// -mobile-navbar-collapse-
-	.mobile-navbar-collapse {
+	.mobile-navbar-collapse-2 {
 		background-color: darkgrey;
 		position: absolute;
 		top: 100%;
@@ -122,7 +122,28 @@
 		overflow: auto;
 	}
 
-	.mobile-navbar-collapse.show {
+	.mobile-navbar-collapse-2.show {
+		left: 0;
+		opacity: 1;
+	}
+
+	// -mobile-navbar-collapse-2-
+	.mobile-navbar-collapse-2 {
+		background-color: #4e4e4e;
+		position: fixed;
+		top: 0;
+		left: -100%;
+		opacity: 0;
+		padding: 0 !important;
+		width: 260px !important;
+		margin: 0;
+		transition: all .5s;
+		height: 100vh;
+		max-height: 100vh;
+		overflow: auto;
+	}
+
+	.mobile-navbar-collapse-2.show {
 		left: 0;
 		opacity: 1;
 	}

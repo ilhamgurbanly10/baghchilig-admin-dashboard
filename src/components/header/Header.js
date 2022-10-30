@@ -2,7 +2,7 @@
 import React, {useRef, useEffect} from "react";
 import Navbar from './Navbar';
 import flashNavbarAnimation from '../../assets/js/library.js';
-// import { BackToTopBtn } from './components/elements/Buttons';
+import BackToTopBtn from '../elements/buttons/BackToTopBtn';
 
 const Header = () => {
 
@@ -14,13 +14,11 @@ const Header = () => {
 
   return (
     <>
-      <header ref={header} className="header position-fixed start-0 top-0 w-100 container-main">
-        
+      <header ref={header} className="header position-fixed start-0 top-0 w-100 container-main">  
         <Navbar/>
-
       </header>  
-
-      {/* <BackToTopBtn/> */}
+      
+      <BackToTopBtn/>
     </>
   )
 };

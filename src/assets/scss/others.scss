@@ -1,0 +1,41 @@
+// -fl-back-to-top-btn-
+.fl-back-to-top-btn {
+    background-color: $green !important;
+    border: 0;
+    color: #fff;
+    padding: 0;
+    width: 60px !important;
+    height: 60px  !important;
+	bottom: 4rem;
+	right: 2.5rem;
+    border-radius: 0!important;
+}
+
+.fl-back-to-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+    bottom: 0;
+}
+
+.fl-back-to-top-btn::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    width: 100%;
+    left: 0;
+    border: 30px solid transparent;
+    border-bottom-color: $green;
+    transition: border-bottom-color .5s;
+}
+
+@media (hover: hover) {
+
+    .fl-back-to-top-btn:hover {
+        background-color: $darkgrey!important;
+    }
+
+    .fl-back-to-top-btn:hover::after {
+        border-bottom-color: $darkgrey !important;
+    }
+
+}

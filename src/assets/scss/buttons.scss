@@ -173,11 +173,12 @@
 
 // -white-responsive-btn-2-
 .white-responsive-btn-2 {
-    background-color: $white !important;
+    background-color: transparent !important;
     padding: 1.1rem 0;
     transition: color .3s;
-    color: $darkgrey !important;
+    color: $white !important;
     font-size: 13px;
+    text-align: center;
 }
 
 @media (hover: hover) {
@@ -197,6 +198,8 @@
     .white-responsive-btn-2 {
         position: relative;
         background-color: $white !important;
+        color: $darkgrey !important;
+        text-align: left;
         border-bottom: 1px solid lightgrey;
     }
 

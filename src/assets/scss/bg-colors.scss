@@ -1,3 +1,15 @@
 .bg-green {
     background-color: $green;
 }
+
+.bg-darkgrey {
+    background-color: $darkgrey;
+}
+
+@media (min-width: 992px) {
+
+    .bg-lg-transparent {
+        background-color: transparent;
+    }
+
+}

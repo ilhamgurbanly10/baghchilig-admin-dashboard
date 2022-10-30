@@ -1,25 +1,21 @@
 import { logo } from '../files/Images';
 import {useEffect, useRef} from 'react';
 import { NavLink } from "react-router-dom";
-// import closeNavbarNav from '../navbar/Navbar';
+import {closeNavbarNav} from '../../assets/js/library';
 import {useTranslation} from "react-i18next";
 import NavbarNav from './NavbarNav';
 import WhiteBtn from '../elements/buttons/WhiteBtn';
-import {connect} from 'react-redux';
 
 
-const Navbar = (props) => {
+const Navbar = () => {
 
     const {t, i18n} = useTranslation('common');
 
-    const {cartProducts} = props;
-
     useEffect(() => {
-      // const toggler = document.querySelector('.navbar-toggler');
-      // let buttons = document.querySelectorAll('.nav-link:not(.dropdown-toggle)');
-      // const dropdownButtons = document.querySelectorAll('.nav-item .dropdown-item');
-      // buttons = [...buttons,...dropdownButtons];
-      // closeNavbarNav(toggler, buttons);
+      const toggler = document.querySelector('.navbar-toggler');
+      let buttons = document.querySelectorAll('.nav-link:not(.dropdown-toggle)');
+      const dropdownButtons = document.querySelectorAll('.nav-item .dropdown-item');
+      closeNavbarNav(toggler, [...buttons,...dropdownButtons]);
     }, []);
 
     return (
@@ -35,7 +31,7 @@ const Navbar = (props) => {
                     <img src={logo} alt="Navbar Brand" className="brand-img" />
                 </NavLink>
                 
-                <div className="collapse navbar-collapse mobile-navbar-collapse flex-grow-0 ms-auto"  id="navbarSupportedContent">
+                <div className="collapse navbar-collapse mobile-navbar-collapse-2 flex-grow-0 ms-auto"  id="navbarSupportedContent">
                     <NavbarNav/>     
                 </div>
 
@@ -49,11 +45,5 @@ const Navbar = (props) => {
     )
 }
 
-const mapStateToProps = ({cartProducts}) => {
-  return {
-      cartProducts
-  }
-}
 
-
-export default connect(mapStateToProps , null)(Navbar)
+export default Navbar;
