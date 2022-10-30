@@ -24,13 +24,41 @@ export function flashNavbarAnimation(nav) {
 
 }
 
+export default flashNavbarAnimation;
+
 // the-end-of-flash-navbar-animation
 
-export default flashNavbarAnimation;
+
+// close-navbar-nav
 
 export const closeNavbarNav = (toggler, buttons) => {
     buttons.forEach(btn => btn.onclick = function() { toggler.click(); });
 }
+
+// the-end-of-close-navbar-nav
+
+
+// flash-create-element
+
+export function flashCreateElement(tagName, html = "", attributes = {}, parent = false, childIndex = "last-child") {
+
+	var el = document.createElement(''+tagName+'');
+	el.innerHTML = html;
+
+	for (let x in attributes) {	el.setAttribute(''+x+'',''+attributes[x]+''); }
+
+  	if (parent) {
+
+  		if (childIndex == "last-child") parent.appendChild(el);
+  		else if (childIndex == "first-child") parent.insertBefore(el, parent.childNodes[0]);
+ 		else parent.insertBefore(el, parent.children[childIndex]);
+  	}
+
+  	return el;
+
+}
+
+// the-end-of-flash-create-element
 
 
 

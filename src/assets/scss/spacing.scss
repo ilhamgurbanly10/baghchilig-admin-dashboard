@@ -16,3 +16,29 @@
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
 }
+
+// -margins-
+
+.mt-5px {
+    margin-top: 5px;
+}
+
+@media (max-width: 991.98px) {
+
+    .mt-till-lg-5px {
+        margin-top: 5px;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .ms-lg-2px {
+        margin-left: 2.5px;
+    }
+
+    .me-lg-2px {
+        margin-right: 2.5px;
+    }
+
+}
