@@ -271,6 +271,23 @@
     color: $darkgrey !important;
 }
 
+// -btn-2-reverse-
+.btn-2-reverse {
+    color: $darkgrey !important;
+}
+
+.btn-2-reverse:hover {
+    color: $green !important;
+}
+
+.btn-2-reverse:active {
+    color: $green !important;
+}
+
+.btn-2-reverse.btn-underline-2::before {
+    background-color: $darkgrey !important;
+}
+
 // -btn-underline-2-
 .btn-underline-2 {
     position: relative;
@@ -353,5 +370,39 @@
 .white-iconic-btn-2:active::before {
     transform: scale(1);
     -webkit-transform: scale(1);
+}
+
+// -line-btn-
+.line-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    padding: 0;
+    background-color: $white;
+}
+
+.line-btn-box {
+    @extend .center-all;
+    position: absolute;
+    left: -24px;
+    top: calc(50% - 25px);
+    width: 50px;
+    height: 50px;
+    background-color: $white;
+    border-radius: 100%;
+    z-index: 99999999;
+    transition: background-color .3s;
+}
+
+@media (hover: hover) {
+    .line-btn:hover .line-btn-box {
+        background-color: $green;
+    }
+}
+
+.line-btn:active .line-btn-box {
+    background-color: $green;
 }
 

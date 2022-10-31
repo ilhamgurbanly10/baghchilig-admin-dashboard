@@ -18,18 +18,21 @@ import teamImg03 from '../../assets/images/team/img-03.jpg';
 import teamImg04 from '../../assets/images/team/img-04.jpg';
 import teamImg05 from '../../assets/images/team/img-05.jpg';
 import teamImg06 from '../../assets/images/team/img-06.png';
+import latestProjectImg01 from '../../assets/images/latest-project/img-01.jpg';
+import latestProjectImg02 from '../../assets/images/latest-project/img-02.jpg';
 import bigIcon from '../../assets/images/big-icon.png';
 
 const Images = { 
     logo, favIcon, mainBgImg, mediaImg01, mediaImg02, mediaImg03, mediaImg04,
     mediaImg05, mediaImg06, aboutUsImg01, aboutUsImg02, aboutUsImg03, aboutUsImg04,
-    img01, teamImg01, teamImg02, teamImg03, teamImg04, teamImg05, teamImg06, bigIcon 
+    img01, teamImg01, teamImg02, teamImg03, teamImg04, teamImg05, teamImg06, bigIcon, 
+    latestProjectImg01, latestProjectImg02 
 };
 
 export { 
     logo, favIcon, mainBgImg, mediaImg01, mediaImg02, mediaImg03, mediaImg04,
     mediaImg05, mediaImg06, aboutUsImg01, aboutUsImg02, aboutUsImg03, aboutUsImg04,
-    img01, teamImg01, teamImg06, bigIcon
+    img01, teamImg01, teamImg06, bigIcon, latestProjectImg01, latestProjectImg02 
 }    
 
 export default Images;

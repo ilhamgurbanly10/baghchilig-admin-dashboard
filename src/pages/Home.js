@@ -3,6 +3,7 @@ import Media from '../components/sections/Media';
 import AboutUs from '../components/sections/AboutUs';
 import Solutions from '../components/sections/Solutions';
 import Team from '../components/sections/Team';
+import LatestProject from '../components/sections/LatestProject';
 import {Helmet} from "react-helmet";
 import {useTranslation} from "react-i18next";
 
@@ -24,6 +25,7 @@ function Home() {
         <AboutUs/>
         <Solutions/>
         <Team/>
+        <LatestProject/>
         
       </>  
     );

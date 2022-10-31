@@ -13,7 +13,8 @@
         "teamTitle": "Meet Baghcilig Team",
         "teamTitle02": "Ilham Gurbanly, Founder",
         "founder": "Founder",
-        "gardener": "Gardener"
+        "gardener": "Gardener",
+        "latestProjectTitle": "Latest Baghchilig Project"
     },
     "texts": {
         "aboutText": "Whether you are looking for plants, trees, shrubs or garden accessories, at Baghchılıg, we’ve got you covered. Established in 1911, we supply top quality garden plants and accessories throughout NY. We can also give you expert advice and guidance on how to care for your plants throughout the year.",
@@ -36,7 +37,8 @@
         "solutionsBtn04": "Terrain Modification",
         "solutionsBtn05": "Pathways & Patios",
         "solutionsBtn06": "Ponds & Water Features",
-        "solutionsBtn07": "Garden Walls"
+        "solutionsBtn07": "Garden Walls",
+        "ourPortfolio": "Our Portfolio"
     },
     "navbarNav": {
         "menu01": "Home",
