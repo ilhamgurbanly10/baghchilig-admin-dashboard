@@ -8,7 +8,7 @@ const Team = () => {
         <section className="team mt-6rem container-main">
             <TeamHeader/> 
             <TeamBody/> 
-            {/* <TeamFooter/>      */}
+            <TeamFooter/>     
         </section>
     )
 
