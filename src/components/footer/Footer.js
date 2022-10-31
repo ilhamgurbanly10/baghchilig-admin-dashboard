@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <footer className='footer mt-7'>      
 
-            Hallo
+            
 
         </footer>
     );

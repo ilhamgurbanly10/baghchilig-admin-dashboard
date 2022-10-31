@@ -6,12 +6,35 @@
         "title01": "Let us bring life to your garden.",
         "phone": "Phone",
         "mail": "Mail",
-        "socialMedia": "Social Media"
+        "socialMedia": "Social Media",
+        "aboutTitle": "We offer Hard & Soft Landscape Solutions",
+        "solutionsTitle": "Popular Landscape Solutions",
+        "solutionsTitle02": "Contact us for a free quotation.",
+        "teamTitle": "Meet Baghcilig Team",
+        "teamTitle02": "Ilham Gurbanly, Founder"
+    },
+    "texts": {
+        "aboutText": "Whether you are looking for plants, trees, shrubs or garden accessories, at Baghchılıg, we’ve got you covered. Established in 1911, we supply top quality garden plants and accessories throughout NY. We can also give you expert advice and guidance on how to care for your plants throughout the year.",
+        "solutionsText": "Wo do everytihng for a beautiful and wonderful garden",
+        "solutionsText02": "Wide range of services",
+        "teamText": "It started with a simple idea: Deliver quality, well-designed landscapes for home, business and public spaces."  
     },
     "buttons": {
         "aboutUs": "About Us",
         "freeQuote": "Free Quote",
-        "contactUs": "Contact Us"
+        "contactUs": "Contact Us",
+        "readMore": "READ MORE",
+        "aboutBtn01": "Landscape Designing",
+        "aboutBtn02": "Landscape Management",
+        "aboutBtn03": "Plant & Tree Solutions",
+        "aboutBtn04": "Landscape Enhancements",
+        "solutionsBtn01": "All Baghchilig Solutions",
+        "solutionsBtn02": "Lawn Moving",
+        "solutionsBtn03": "Watering",
+        "solutionsBtn04": "Terrain Modification",
+        "solutionsBtn05": "Pathways & Patios",
+        "solutionsBtn06": "Ponds & Water Features",
+        "solutionsBtn07": "Garden Walls"
     },
     "navbarNav": {
         "menu01": "Home",

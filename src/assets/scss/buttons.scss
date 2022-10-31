@@ -105,6 +105,33 @@
     }    
 }
 
+// -btn-1-green-
+.btn-1-green {
+    color: $white !important;
+    outline-color: $green !important;
+    font-weight: normal;
+    padding: .9rem 3rem;
+}
+
+.btn-1-green .btn-1-bg-box {
+    background-color: $green;
+}
+
+.btn-1-green::before,
+.btn-1-green::after {
+    background-color: $green;
+}
+
+@media (hover: hover) {
+    .btn-1-green:hover {
+        color: $green !important;
+    }
+}
+
+.btn-1-green:active {
+    color: $green !important;
+}
+
 // -white-iconic-btn-
 .white-iconic-btn {
     color: $white !important;
@@ -224,4 +251,49 @@
         width: 10px;
     }
 
+}
+
+// -btn-2-
+.btn-2 {
+    color: $green !important;
+    transition: color .3s;
+}
+
+@media (hover: hover) {
+
+    .btn-2:hover {
+        color: $darkgrey !important;
+    }
+
+}
+
+.btn-2:active {
+    color: $darkgrey !important;
+}
+
+// -btn-underline-2-
+.btn-underline-2 {
+    position: relative;
+    padding-bottom: .5rem;
+}
+
+.btn-underline-2::before {
+    content: "";
+    width: 100%;
+    height: 1.5px;
+    background-color: $green;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: width .3s;
+}
+
+@media (hover: hover) {
+    .btn-underline-2:hover::before {
+        width: 0;
+    }
+}
+
+.btn-underline-2:active::before {
+    width: 0;
 }

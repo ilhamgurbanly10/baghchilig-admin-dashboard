@@ -1,0 +1,14 @@
+// -card-01-
+.card-01-text {
+    transition: color .3s;
+}
+
+@media (hover: hover) {
+    .card-01:hover .card-01-text {
+        color: $green !important;
+    }
+}
+
+.card-01:active .card-01-text {
+    color: $green !important;
+}

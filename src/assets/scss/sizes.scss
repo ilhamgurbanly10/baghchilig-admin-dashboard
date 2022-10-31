@@ -1,3 +1,11 @@
 .width-1 {
     width: 31.2%;
 }
+
+@media (min-width: 992px) {
+
+    .w-lg-60 {
+        width: 60%;
+    }
+    
+}

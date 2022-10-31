@@ -15,3 +15,29 @@
     font-size: 20px;
     letter-spacing: 1px;
 }
+
+// -green-title-
+.green-title {
+    color: $green;
+    margin: 0;
+    font-weight: bold;
+    font-size: calc(24px + 1vw);
+    letter-spacing: 1px;
+}
+
+// -grey-title-
+.grey-title {
+    color: $darkgrey;
+    margin: 0;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+// -black-title-
+.black-title {
+    color: black;
+    margin: 0;
+    font-size: calc(24px +  .7vw);
+    line-height: 54px;
+    letter-spacing: 1px;
+}

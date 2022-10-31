@@ -6,8 +6,16 @@
 }
 
 @media (min-width: 992px) {
+
     .container-main {
         padding-left: 10%;
         padding-right: 10%;
     }
+
+    .container-lg-main {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
 }

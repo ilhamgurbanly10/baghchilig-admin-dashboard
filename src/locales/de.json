@@ -6,12 +6,35 @@
         "title01": "Lassen Sie uns Leben in Ihren Garten bringen.",
         "phone": "Telefonnummer",
         "mail": "Mail",
-        "socialMedia": "Sozial Media"
+        "socialMedia": "Sozial Media",
+        "aboutTitle": "Wir bieten Hard & Soft Landschaftslösungen",
+        "solutionsTitle": "Beliebte Landschaftslösungen",
+        "solutionsTitle02": "Kontaktieren Sie uns für ein kostenloses Angebot.",
+        "teamTitle": "Lernen Sie das Baghcilig-Team kennen",
+        "teamTitle02": "Ilham Gurbanly, Gründer"
+    },
+    "texts": {
+        "aboutText": "Ob Sie nach Pflanzen, Bäumen, Sträuchern oder Gartenzubehör suchen, bei Baghchılıg sind Sie bei uns richtig. Wir wurden 1911 gegründet und liefern Gartenpflanzen und Zubehör von höchster Qualität in ganz New York. Wir können Sie auch das ganze Jahr über fachkundig beraten und anleiten, wie Sie Ihre Pflanzen pflegen können.",
+        "solutionsText": "Die alles für einen schönen und wunderbaren Garten tun",
+        "solutionsText02": "Breites Leistungsspektrum",
+        "teamText": "Es begann mit einer einfachen Idee: Liefern Sie qualitativ hochwertige, gut gestaltete Landschaften für Wohn-, Geschäfts- und öffentliche Räume."    
     },
     "buttons": {
         "aboutUs": "Über Uns",
         "freeQuote": "Kostenloses Angebot",
-        "contactUs": "Kontaktiere Uns"
+        "contactUs": "Kontaktiere Uns",
+        "readMore": "MEHR LESEN",
+        "aboutBtn01": "Landschaftsgestaltung",
+        "aboutBtn02": "Landschaftsmanagement",
+        "aboutBtn03": "Lösungen für Pflanzen und Bäume",
+        "aboutBtn04": "Landschaftsverbesserungen",
+        "solutionsBtn01": "Alle Baghchilig-Lösungen",
+        "solutionsBtn02": "Rasenmähen",
+        "solutionsBtn03": "Bewässerung",
+        "solutionsBtn04": "Geländemodifikation",
+        "solutionsBtn05": "Wege und Terrassen",
+        "solutionsBtn06": "Teiche & Wasserspiele",
+        "solutionsBtn07": "Gartenmauern"
     },
     "navbarNav": {
         "menu01": "Stertseite",

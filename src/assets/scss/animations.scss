@@ -243,3 +243,14 @@
 .opacity-on-hover:active {
     opacity: .7;
 }
+
+.footer-box-shadow-on-hover {
+    transition: all .3s;
+}
+
+@media (hover: hover) {
+    .footer-box-shadow-on-hover:hover {
+        -webkit-box-shadow: 0 20px 20px -10px rgb(0 0 0 / 20%);
+        box-shadow: 0 20px 20px -10px rgb(0 0 0 / 20%);
+    }
+}

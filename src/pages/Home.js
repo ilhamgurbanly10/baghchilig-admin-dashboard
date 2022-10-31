@@ -1,5 +1,8 @@
 import Main from '../components/sections/Main';
 import Media from '../components/sections/Media';
+import AboutUs from '../components/sections/AboutUs';
+import Solutions from '../components/sections/Solutions';
+import Team from '../components/sections/Team';
 import {Helmet} from "react-helmet";
 import {useTranslation} from "react-i18next";
 
@@ -18,6 +21,9 @@ function Home() {
 
         <Main/>
         <Media/>
+        <AboutUs/>
+        <Solutions/>
+        <Team/>
         
       </>  
     );

@@ -98,3 +98,29 @@
 .search-icon:active::after {
     opacity: 1;
 }
+
+// -color-style-on-hover-
+.color-style-on-hover,
+.color-style-on-hover * {
+    transition: all .3s;
+}
+
+@media (hover: hover) {
+
+    .color-style-on-hover:hover {
+        background-color: $white;
+    }
+
+    .color-style-on-hover:hover * {
+        color: $darkgrey;
+    }
+
+}
+
+.color-style-on-hover:active {
+    background-color: $white;
+}
+
+.color-style-on-hover:active * {
+    color: $darkgrey;
+}

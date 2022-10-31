@@ -6,12 +6,35 @@
         "title01": "Gəlin bağınıza həyat gətirək.",
         "phone": "Telefon",
         "mail": "E-Poçt",
-        "socialMedia": "Sosial Media"
+        "socialMedia": "Sosial Media",
+        "aboutTitle": "Biz Sərt və Yumşaq Landşaft Həllərini təklif edirik",
+        "solutionsTitle": "Populyar Landşaft Həlləri",
+        "solutionsTitle02": "Pulsuz məsləhət üçün bizimlə əlaqə saxlayın.",
+        "teamTitle": "Bağçılıq Komandası İlə Görüş",
+        "teamTitle02": "Ilham Gurbanly, Yaradıcı",
+        "teamText": "Bu, sadə bir ideya ilə başladı: Ev, biznes və ictimai məkanlar üçün keyfiyyətli, yaxşı dizayn edilmiş mənzərələr təqdim edirik."  
+    },
+    "texts": {
+        "aboutText": "Bağçılıq-da bitkilər, ağaclar, kollar və ya bağ aksesuarları axtarırsınızsa, bizdə hamısından mövcuddur. 1911-ci ildə yaradılmış, biz NY boyunca yüksək keyfiyyətli bağ bitkiləri və aksesuarları təmin edirik. Biz həmçinin sizə il boyu bitkilərinizə necə qulluq etməyinizlə bağlı mütəxəssis məsləhətləri və təlimatlar verə bilərik.",
+        "solutionsText": "Biz gözəl və möhtəşəm bir bağ üçün hər bir şeyi edirik",
+        "solutionsText02": "Geniş çeşidli xidmətlər"  
     },
     "buttons": {
         "aboutUs": "Haqqımızda",
         "freeQuote": "Pulsuz Sitat",
-        "contactUs": "Bizimlə Əlaqə"
+        "contactUs": "Bizimlə Əlaqə",
+        "readMore": "ƏTRAFLI OXU",
+        "aboutBtn01": "Landşaft Dizaynı",
+        "aboutBtn02": "Landşaft İdarəçiliyi",
+        "aboutBtn03": "Bitki & Ağac Üçün Həllər",
+        "aboutBtn04": "Landşaft Təkmili",
+        "solutionsBtn01": "Bütün Bağçılıq Həlləri",
+        "solutionsBtn02": "Ot Biçmə",
+        "solutionsBtn03": "Sulama",
+        "solutionsBtn04": "Ərazi Modifikasiyası",
+        "solutionsBtn05": "Yollar və Çığırlar",
+        "solutionsBtn06": "Hovuzlar və Su Xüsusiyyətləri",
+        "solutionsBtn07": "Bağ Çəpərləri"
     },
     "navbarNav": {
         "menu01": "Ana Səhifə",

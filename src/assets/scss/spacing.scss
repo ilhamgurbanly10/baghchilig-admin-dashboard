@@ -17,10 +17,23 @@
     padding-bottom: 2rem !important;
 }
 
+.py-6rem {
+    padding-top: calc(4rem + 2vw);
+    padding-bottom: calc(4rem + 2vw);
+}
+
 // -margins-
 
 .mt-5px {
     margin-top: 5px;
+}
+
+.mt-6rem {
+    margin-top: calc(4rem + 2vw);
+}
+
+.mt-2rem {
+    margin-top: 2rem;
 }
 
 @media (max-width: 991.98px) {

@@ -14,10 +14,10 @@ const MediaImages = () => {
 
     return (
         <div className="media-images mt-5px list-1" ref={lightbox}>
-            <ImageCard img={Images.mediaImg03} url="" large="false" className="fl-lightbox-img fl-lightbox-btn"/>
-            <ImageCard img={Images.mediaImg04} url="" large="true" className="fl-lightbox-img fl-lightbox-btn"/>
-            <ImageCard img={Images.mediaImg05} url="" large="false" className="fl-lightbox-img fl-lightbox-btn"/>
-            <ImageCard img={Images.mediaImg06} url="" large="true" className="fl-lightbox-img fl-lightbox-btn"/>
+            <ImageCard img={Images.mediaImg03} large="false" className="fl-lightbox-img fl-lightbox-btn"/>
+            <ImageCard img={Images.mediaImg04} large="true" className="fl-lightbox-img fl-lightbox-btn"/>
+            <ImageCard img={Images.mediaImg05} large="false" className="fl-lightbox-img fl-lightbox-btn"/>
+            <ImageCard img={Images.mediaImg06} large="true" className="fl-lightbox-img fl-lightbox-btn"/>
         </div>
     )
 
