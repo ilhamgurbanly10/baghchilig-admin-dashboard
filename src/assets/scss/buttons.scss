@@ -406,3 +406,22 @@
     background-color: $green;
 }
 
+// -btn-3-
+.btn-3 {
+    color: $darkgrey !important;
+    transition: opacity .3s;
+    opacity: 1;
+    padding: 7px 0;
+    font-size: 13px;
+}
+
+@media (hover: hover) {
+    .btn-3:hover {
+        opacity: .5;
+    }
+}
+
+.btn-3:active {
+    opacity: .5;
+}
+

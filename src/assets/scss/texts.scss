@@ -1,14 +1,3 @@
-// -full-screen-text-
-.full-screen-text {
-    @extend .center-all;
-    background-color: #fff;
-    color: yellow;
-    width: 100%;
-    height: 100vh;
-    @include SetPosition(fixed, 0, 0, 0, 0);
-    z-index: 99999999999;
-}
-
 // -grey-text-
 .grey-text {
     color: grey;

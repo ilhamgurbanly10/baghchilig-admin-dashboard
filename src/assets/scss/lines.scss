@@ -1,0 +1,33 @@
+// -green-underline-
+.green-underline {
+    position: relative;
+    padding-bottom: 3px;
+}
+
+.green-underline::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background-color: $green;
+    left: 0;
+    bottom: 0;
+}
+
+// -grey-underline-
+.grey-underline {
+    position: relative;
+    padding-top: 1.2rem !important;
+    padding-bottom: 1.2rem !important;
+}
+
+.grey-underline::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: $darkgrey;
+    opacity: .3;
+    width: 60%;
+}

@@ -1,6 +1,6 @@
 // resizable-images
 
-function resizableImages(el) {
+const resizableImages = el => {
 	
 	const btn = el.querySelector('.resizable-images-btn');
 	const con = el.querySelector('.resizable-images-container');
@@ -30,8 +30,7 @@ function resizableImages(el) {
     }
 
 	const resize = (e) => {
-        e = e || window.event;
-        
+        e = e || window.event;  
         const left = con.getBoundingClientRect().left;
         const mouseX =  e.clientX || e.touches[0].clientX;
         const pos = mouseX - left;

@@ -32,6 +32,10 @@
     margin-top: calc(4rem + 2vw);
 }
 
+.mt-10rem {
+    margin-top: calc(8rem + 2vw);
+}
+
 .mt-2rem {
     margin-top: 2rem;
 }
@@ -54,4 +58,10 @@
         margin-right: 2.5px;
     }
 
+}
+
+// -top-bottom-right-left-
+
+.top-3px {
+   top: 3px;
 }

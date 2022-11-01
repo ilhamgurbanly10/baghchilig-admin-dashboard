@@ -14,12 +14,19 @@
         "teamTitle02": "Ilham Gurbanly, Gründer",
         "founder": "Gründer/in",
         "gardener": "Gärtner/in",
-        "latestProjectTitle": "Das Letzte Baghchilig-Projekt"
+        "latestProjectTitle": "Das Letzte Baghchilig-Projekt",
+        "testimonials": "Referenzen",
+        "contactUs": "Kontaktiere Uns",
+        "aboutUs": "Über Unss",
+        "popularServices": "Beliebte Dienste",
+        "emergencyService": "Notdienst"
     },
     "texts": {
         "aboutText": "Ob Sie nach Pflanzen, Bäumen, Sträuchern oder Gartenzubehör suchen, bei Baghchılıg sind Sie bei uns richtig. Wir wurden 1911 gegründet und liefern Gartenpflanzen und Zubehör von höchster Qualität in ganz New York. Wir können Sie auch das ganze Jahr über fachkundig beraten und anleiten, wie Sie Ihre Pflanzen pflegen können.",
         "solutionsText": "Die alles für einen schönen und wunderbaren Garten tun",
         "solutionsText02": "Breites Leistungsspektrum",
+        "notFound": "Die Seite wurde nicht gefunden",
+        "copyright": "GARTENARBEITSVORLAGE © CODING VON ILHAM GURBANLY.",
         "teamText": "Es begann mit einer einfachen Idee: Liefern Sie qualitativ hochwertige, gut gestaltete Landschaften für Wohn-, Geschäfts- und öffentliche Räume."    
     },
     "buttons": {
@@ -38,7 +45,8 @@
         "solutionsBtn05": "Wege und Terrassen",
         "solutionsBtn06": "Teiche & Wasserspiele",
         "solutionsBtn07": "Gartenmauern",
-        "ourPortfolio": "Unser Portfolio"
+        "ourPortfolio": "Unser Portfolio",
+        "backToHome": "Zurück zur Startseite"
     },
     "navbarNav": {
         "menu01": "Stertseite",

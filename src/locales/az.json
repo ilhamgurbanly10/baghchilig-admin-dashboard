@@ -15,12 +15,19 @@
         "teamText": "Bu, sadə bir ideya ilə başladı: Ev, biznes və ictimai məkanlar üçün keyfiyyətli, yaxşı dizayn edilmiş mənzərələr təqdim edirik.",
         "founder": "Qurucu",
         "gardener": "Bağban",
-        "latestProjectTitle": "Ən Son Bağçılıq Layihəsi"  
+        "latestProjectTitle": "Ən Son Bağçılıq Layihəsi",
+        "testimonials": "Rəylər",
+        "contactUs": "Bizimlə Əlaqə",
+        "aboutUs": "Haqqımızda",
+        "popularServices": "Məşhur Xidmətlər",
+        "emergencyService": "Təcili Servis"  
     },
     "texts": {
         "aboutText": "Bağçılıq-da bitkilər, ağaclar, kollar və ya bağ aksesuarları axtarırsınızsa, bizdə hamısından mövcuddur. 1911-ci ildə yaradılmış, biz NY boyunca yüksək keyfiyyətli bağ bitkiləri və aksesuarları təmin edirik. Biz həmçinin sizə il boyu bitkilərinizə necə qulluq etməyinizlə bağlı mütəxəssis məsləhətləri və təlimatlar verə bilərik.",
         "solutionsText": "Biz gözəl və möhtəşəm bir bağ üçün hər bir şeyi edirik",
-        "solutionsText02": "Geniş çeşidli xidmətlər"  
+        "solutionsText02": "Geniş çeşidli xidmətlər",
+        "notFound": "Səhifə tapılmadı",
+        "copyright": "BAĞÇILIQ TEMPLEYTİ © İLHAM QURBANLI TƏRƏFİNDƏN KODLAMA."
     },
     "buttons": {
         "aboutUs": "Haqqımızda",
@@ -38,7 +45,8 @@
         "solutionsBtn05": "Yollar və Çığırlar",
         "solutionsBtn06": "Hovuzlar və Su Xüsusiyyətləri",
         "solutionsBtn07": "Bağ Çəpərləri",
-        "ourPortfolio": "Portfoliomuz"
+        "ourPortfolio": "Portfoliomuz",
+        "backToHome": "Ana səhifəyə qayıt"
     },
     "navbarNav": {
         "menu01": "Ana Səhifə",

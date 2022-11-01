@@ -75,7 +75,8 @@ body {
 
 /* poppins */
 .ff-poppins, .white-bigger-title, .btn-1, .white-title, .white-responsive-btn,
-.white-responsive-btn-2, .grey-text, .green-title, .grey-title, .btn-2, .black-title   {
+.white-responsive-btn-2, .grey-text, .green-title, .grey-title, .btn-2, .black-title, 
+.black-title-2, .btn-3   {
     font-family: "Poppins", sans-serif;
 }
 
@@ -495,6 +496,10 @@ body {
 		font-size: 50px !important;
 	}
 
+}
+
+.line-height-initial {
+	line-height: initial !important;
 }
 
 /* the-end-of-sizes */
