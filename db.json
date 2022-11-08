@@ -1,0 +1,58 @@
+{
+  "positions": [
+    {
+      "id": 1,
+      "name_az": "Bağban",
+      "name_de": "Gärtner",
+      "name_en": "Gardener",
+      "status": true
+    },
+    {
+      "name_az": "Təmizlikçi",
+      "name_en": "Cleaner",
+      "name_de": "Reiniger",
+      "status": true,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name_az": "Mühafizəçi",
+      "name_de": "Wachmann",
+      "name_en": "Guard",
+      "status": true
+    },
+    {
+      "name_az": "Qurucu",
+      "name_en": "Founder",
+      "name_de": "Gründer/in",
+      "status": true,
+      "id": 4
+    }
+  ],
+  "team-members": [
+    {
+      "id": 1,
+      "img": "https://st.depositphotos.com/1345889/2019/i/600/depositphotos_20192235-stock-photo-stern-and-serious-beauty.jpg",
+      "name": "Aysu Gurbanly",
+      "instagram": "/",
+      "twitter": "/",
+      "facebook": "/",
+      "position_az": "Bağban",
+      "position_de": "Gärtner",
+      "position_en": "Gardener",
+      "status": true
+    },
+    {
+      "img": "https://png.pngitem.com/pimgs/s/130-1300380_female-user-image-icon-hd-png-download.png",
+      "name": "Sema",
+      "instagram": "/",
+      "twitter": "/",
+      "facebook": "/",
+      "position_az": "Bağban",
+      "position_en": "Gardener",
+      "position_de": "Gärtner",
+      "status": true,
+      "id": 5
+    }
+  ]
+}

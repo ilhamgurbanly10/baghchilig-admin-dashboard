@@ -1,68 +1,42 @@
 {
-    "pages": {
-        "home": "Home Page"
-    },
-    "titles": {
-        "title01": "Let us bring life to your garden.",
-        "phone": "Phone",
-        "mail": "Mail",
-        "socialMedia": "Social Media",
-        "aboutTitle": "We offer Hard & Soft Landscape Solutions",
-        "solutionsTitle": "Popular Landscape Solutions",
-        "solutionsTitle02": "Contact us for a free quotation.",
-        "teamTitle": "Meet Baghcilig Team",
-        "teamTitle02": "Ilham Gurbanly, Founder",
-        "founder": "Founder",
-        "gardener": "Gardener",
-        "latestProjectTitle": "Latest Baghchilig Project",
-        "testimonials": "Testimonials",
-        "contactUs": "Contact Us",
-        "aboutUs": "About Us",
-        "popularServices": "Popular Services",
-        "emergencyService": "Emergency Service"
-    },
     "texts": {
-        "aboutText": "Whether you are looking for plants, trees, shrubs or garden accessories, at Baghchılıg, we’ve got you covered. Established in 1911, we supply top quality garden plants and accessories throughout NY. We can also give you expert advice and guidance on how to care for your plants throughout the year.",
-        "solutionsText": "Wo do everytihng for a beautiful and wonderful garden",
-        "solutionsText02": "Wide range of services",
-        "notFound": "Page is not found",
-        "copyright": "GARDENING TEMPLATE © CODING BY ILHAM GURBANLY.",
-        "teamText": "It started with a simple idea: Deliver quality, well-designed landscapes for home, business and public spaces."  
+        "copyright": "Admin Dashboard ©2022 Created by Ilham Gurbanly",
+        "notFound": "Page not found",
+        "aboutUs": "This admin panel was developed by Ilham Gurbanly in 2022. Enjoy managing your site with a beautiful admin panel.",
+        "confirmationMessage": "Are you sure to delete it?",
+        "yes": "Yes",
+        "no": "No",
+        "successfullyAdded": "Successfully Added",
+        "successfullyDeleted": "Successfully Deleted",
+        "errorOccured": "Something Went Wrong",
+        "successfullyChanged": "Successfully Changed",
+        "required": "This input is required"
+    },
+    "menu": {
+        "item01": "Home Page",
+        "item02": "Positions",
+        "item03": "Team Members"
     },
     "buttons": {
-        "aboutUs": "About Us",
-        "freeQuote": "Free Quote",
-        "contactUs": "Contact Us",
-        "readMore": "READ MORE",
-        "aboutBtn01": "Landscape Designing",
-        "aboutBtn02": "Landscape Management",
-        "aboutBtn03": "Plant & Tree Solutions",
-        "aboutBtn04": "Landscape Enhancements",
-        "solutionsBtn01": "All Baghchilig Solutions",
-        "solutionsBtn02": "Lawn Moving",
-        "solutionsBtn03": "Watering",
-        "solutionsBtn04": "Terrain Modification",
-        "solutionsBtn05": "Pathways & Patios",
-        "solutionsBtn06": "Ponds & Water Features",
-        "solutionsBtn07": "Garden Walls",
-        "ourPortfolio": "Our Portfolio",
-        "backToHome": "Back to home page"
+        "backToHome": "Back to home page",
+        "edit": "Edit",
+        "delete": "Delete",
+        "add": "Add",
+        "reset": "Reset"
     },
-    "navbarNav": {
-        "menu01": "Home",
-        "menu02": "About",
-        "menu03": "Projects",
-        "menu04": "Blog",
-        "menu05": "Shop",
-        "menu06": "Elements",
-        "subMenu01": "About",
-        "subMenu02": "Team",
-        "subMenu03": "Testimonials",
-        "subMenu04": "History",
-        "subMenu05": "Services",
-        "subMenu06": "All Projects",
-        "subMenu07": "New Projects",
-        "subMenu08": "Future Projects"
+    "titles": {
+        "pageName": "Bağçılıq",
+        "image": "Image",
+        "category": "Category",
+        "year": "Year", 
+        "price": "Price",
+        "action": "Actions",
+        "name": "Name",
+        "text": "Text",
+        "categories": "Categories",
+        "date": "Date",
+        "length": "Length",
+        "subtotal": "Total Price",
+        "position": "Position"
     }
-
 }

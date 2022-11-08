@@ -1,6 +1,6 @@
 body {
 	font-size: 16px;
-	font-family: "Noto serif", sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 
 /* fonts */
@@ -74,9 +74,7 @@ body {
 }
 
 /* poppins */
-.ff-poppins, .white-bigger-title, .btn-1, .white-title, .white-responsive-btn,
-.white-responsive-btn-2, .grey-text, .green-title, .grey-title, .btn-2, .black-title, 
-.black-title-2, .btn-3   {
+.ff-poppins  {
     font-family: "Poppins", sans-serif;
 }
 

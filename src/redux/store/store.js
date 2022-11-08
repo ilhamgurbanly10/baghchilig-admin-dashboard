@@ -1,9 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
-import testimonialsReducer from "../reducers/testimonialsSlice";
+import positionsSlice from "../reducers/positionsSlice";
+import teamMembersSlice from "../reducers/teamMembersSlice";
 
 
 export const store = configureStore({
     reducer: {
-        testimonials: testimonialsReducer,
+        positions: positionsSlice,
+        teamMembers: teamMembersSlice,
     },  
 });

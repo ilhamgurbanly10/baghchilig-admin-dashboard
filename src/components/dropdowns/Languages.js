@@ -20,19 +20,19 @@ const Languages = (props) => {
           {
             key: '1',
             label: (
-                <button onClick={() => { changeLan('az') }} className="btn btn-success mt-2 mb-2">AZ</button>
+                <button onClick={() => { changeLan('az') }} className="btn btn-primary mt-2 mb-2">AZ</button>
             ),
           },
           {
             key: '2',
             label: (
-                <button onClick={() => { changeLan('de') }} className="btn btn-success mb-2">DE</button>
+                <button onClick={() => { changeLan('de') }} className="btn btn-primary mb-2">DE</button>
             ),
           },
           {
             key: '3',
             label: (
-                <button onClick={() => { changeLan('en') }} className="btn btn-success">EN</button>
+                <button onClick={() => { changeLan('en') }} className="btn btn-primary">EN</button>
             ),
           },
         ]}

@@ -1,68 +1,42 @@
 {
-    "pages": {
-        "home": "Startseite"
-    },
-    "titles": {
-        "title01": "Lassen Sie uns Leben in Ihren Garten bringen.",
-        "phone": "Telefonnummer",
-        "mail": "Mail",
-        "socialMedia": "Sozial Media",
-        "aboutTitle": "Wir bieten Hard & Soft Landschaftslösungen",
-        "solutionsTitle": "Beliebte Landschaftslösungen",
-        "solutionsTitle02": "Kontaktieren Sie uns für ein kostenloses Angebot.",
-        "teamTitle": "Lernen Sie das Baghcilig-Team kennen",
-        "teamTitle02": "Ilham Gurbanly, Gründer",
-        "founder": "Gründer/in",
-        "gardener": "Gärtner/in",
-        "latestProjectTitle": "Das Letzte Baghchilig-Projekt",
-        "testimonials": "Referenzen",
-        "contactUs": "Kontaktiere Uns",
-        "aboutUs": "Über Unss",
-        "popularServices": "Beliebte Dienste",
-        "emergencyService": "Notdienst"
-    },
     "texts": {
-        "aboutText": "Ob Sie nach Pflanzen, Bäumen, Sträuchern oder Gartenzubehör suchen, bei Baghchılıg sind Sie bei uns richtig. Wir wurden 1911 gegründet und liefern Gartenpflanzen und Zubehör von höchster Qualität in ganz New York. Wir können Sie auch das ganze Jahr über fachkundig beraten und anleiten, wie Sie Ihre Pflanzen pflegen können.",
-        "solutionsText": "Die alles für einen schönen und wunderbaren Garten tun",
-        "solutionsText02": "Breites Leistungsspektrum",
+        "copyright": "Admin-Dashboard ©2022 Erstellt von Ilham Gurbanly",
         "notFound": "Die Seite wurde nicht gefunden",
-        "copyright": "GARTENARBEITSVORLAGE © CODING VON ILHAM GURBANLY.",
-        "teamText": "Es begann mit einer einfachen Idee: Liefern Sie qualitativ hochwertige, gut gestaltete Landschaften für Wohn-, Geschäfts- und öffentliche Räume."    
+        "aboutUs": "Dieses Admin-Panel wurde 2022 von Ilham Gurbanly entwickelt. Genießen Sie die Verwaltung Ihrer Website mit einem schönen Admin-Panel.",
+        "confirmationMessage": "Bist du sicher es zu löschen?",
+        "yes": "Ja",
+        "no": "Nein",
+        "successfullyAdded": "Erfolgreich Hinzugefügt",
+        "successfullyDeleted": "Erfolgreich Gelöscht",
+        "errorOccured": "Etwas ist schief gelaufen",
+        "successfullyChanged": "Erfolgreich Geändert",
+        "required": "Dieses Input ist erforderlich"
+    },
+    "menu": {
+        "item01": "Startseite",
+        "item02": "Positionen",
+        "item03": "Teammitglieder"
     },
     "buttons": {
-        "aboutUs": "Über Uns",
-        "freeQuote": "Kostenloses Angebot",
-        "contactUs": "Kontaktiere Uns",
-        "readMore": "MEHR LESEN",
-        "aboutBtn01": "Landschaftsgestaltung",
-        "aboutBtn02": "Landschaftsmanagement",
-        "aboutBtn03": "Lösungen für Pflanzen und Bäume",
-        "aboutBtn04": "Landschaftsverbesserungen",
-        "solutionsBtn01": "Alle Baghchilig-Lösungen",
-        "solutionsBtn02": "Rasenmähen",
-        "solutionsBtn03": "Bewässerung",
-        "solutionsBtn04": "Geländemodifikation",
-        "solutionsBtn05": "Wege und Terrassen",
-        "solutionsBtn06": "Teiche & Wasserspiele",
-        "solutionsBtn07": "Gartenmauern",
-        "ourPortfolio": "Unser Portfolio",
-        "backToHome": "Zurück zur Startseite"
+        "backToHome": "Zurück zur Startseite",
+        "edit": "Bearbeiten",
+        "delete": "Löschen",
+        "add": "Hinzufügen",
+        "reset": "Zurücksetzen"
     },
-    "navbarNav": {
-        "menu01": "Stertseite",
-        "menu02": "Über Uns",
-        "menu03": "Projekte",
-        "menu04": "Blog",
-        "menu05": "Einkaufen",
-        "menu06": "Elemente",
-        "subMenu01": "Über Uns",
-        "subMenu02": "Mannschaft",
-        "subMenu03": "Referenzen",
-        "subMenu04": "Geschichte",
-        "subMenu05": "Bedienungen",
-        "subMenu06": "Alle Projekte",
-        "subMenu07": "Neue Projekte",
-        "subMenu08": "Zukünftige Projekte"
+    "titles": {
+        "pageName": "Bağçılıq",
+        "image": "Bild",
+        "category": "Kategorie",
+        "year": "Jahr", 
+        "price": "Price",
+        "action": "Aktions",
+        "name": "Name",
+        "text": "Text",
+        "categories": "Kategorien",
+        "date": "Datum",
+        "length": "Anzahl",
+        "subtotal": "Gesamtes Preis",
+        "position": "Position"
     }
-
 }

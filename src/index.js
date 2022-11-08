@@ -4,7 +4,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "./i18n.js";
 import { Provider } from 'react-redux';
-import { store } from '../src/redux/store/store';
+import { store } from './redux/store/store';
 
 
 

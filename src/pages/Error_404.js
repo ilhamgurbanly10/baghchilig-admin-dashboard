@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import {useTranslation} from "react-i18next";
-import GreenBtn from '../components/elements/buttons/GreenBtn';
+
 
 const Error_404 = () => {
 
@@ -9,11 +9,12 @@ const Error_404 = () => {
     return (
       <div className="error-404-text fl-full-screen-text flex-column">
         
+        <h1 className="mb-4">404</h1>
         <h1 className="mb-4">{t('texts.notFound')}</h1>
         
-        <GreenBtn className="mt-4" url="">
+        <Link to="/" className="mt-4 btn btn-danger py-2">
           {t('buttons.backToHome')}
-        </GreenBtn>
+        </Link>
 
       </div>  
     );
