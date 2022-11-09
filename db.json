@@ -54,5 +54,50 @@
       "status": true,
       "id": 5
     }
+  ],
+  "solutions": [
+    {
+      "id": 1,
+      "img": "data:image/png;base64,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",
+      "name_az": "Sulama",
+      "name_de": "Bewässerung",
+      "name_en": "Watering",
+      "text_az": "<p>Biz gözəl və möhtəşəm bir bağ üçün hər bir şeyi edirik</p>",
+      "text_de": "<p>Wir tun alles für einen schönen und wunderbaren Garten</p>",
+      "text_en": "<p>Wo do everytihng for a beautiful and wonderful garden</p>",
+      "status": true
+    }
+  ],
+  "project-categories": [
+    {
+      "id": 1,
+      "name_az": "Bağçılıq",
+      "name_de": "Gartenarbeit",
+      "name_en": "Gardening",
+      "status": true
+    },
+    {
+      "name_az": "Əkinçilik",
+      "name_en": "Farming",
+      "name_de": "Landwirtschaft",
+      "status": true,
+      "id": 2
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "img": "https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2022-08/HGIC-trees-watering-with-water-breaker-MT-1000.jpg?itok=1ERE2dPr",
+      "name_az": "Sulama",
+      "name_de": "Bewässerung",
+      "name_en": "Watering",
+      "text_az": "<p>Biz gözəl və möhtəşəm bir bağ üçün hər bir şeyi edirik</p>",
+      "text_de": "<p>Wir tun alles für einen schönen und wunderbaren Garten</p>",
+      "text_en": "<p>Wo do everytihng for a beautiful and wonderful garden</p>",
+      "category_az": "Bağçılıq",
+      "category_de": "Gartenarbeit",
+      "category_en": "Gardening",
+      "status": true
+    }
   ]
 }

@@ -7,7 +7,7 @@ import { Space, Table, Switch, Popconfirm, notification, Form, Input   } from 'a
 import { SmileOutlined , WarningOutlined} from '@ant-design/icons';
 
 
-function Positions() {
+const Positions = () => {
 
     const data = useSelector((state) => state.positions);
     const [form] = Form.useForm();
@@ -17,6 +17,7 @@ function Positions() {
     const locales = ['az','en','de'];
     const [id, setId] = useState(null);
     const [status, setStatus] = useState(true);
+    const [loading, setLoading] = useState(true);
 
     const columns = [
       {
@@ -153,8 +154,21 @@ function Positions() {
       });
     }
 
+    const footerText = () => {
+      let text;
+      const len = data.data.length;
+      if (len === 0) text = t('texts.notPosts');
+      else if (len === 1) text = `${len} ${t('texts.post')}`
+      else text = `${len} ${t('texts.posts')}`  
+      return text;
+    }
+
     useEffect(()=>{
       dispatch(getAll())
+      .unwrap()
+      .then((originalPromiseResult) => {
+        setLoading(false);
+      })
     }, [])
 
     return (
@@ -164,18 +178,18 @@ function Positions() {
           <title>{t('titles.pageName')} - {t('menu.item02')}</title>
         </Helmet>
 
-        <Table id="table" columns={columns} dataSource={data.data} />
+        <Table id="table" title={() => ( <h6>{t('menu.item02')}</h6> )} footer={() => footerText() } columns={columns} dataSource={data.data} loading={loading}/>
 
         <Form
             form={form}
             name="basic"
-            className="mt-5 pt-5"
+            className="mt-5 pt-5 w-65"
             id="form"
             labelCol={{
-              span: 8,
+              span: 24,
             }}
             wrapperCol={{
-              span: 16,
+              span: 24,
             }}
             layout="vertical"
             onFinish={onFinish}
@@ -208,7 +222,7 @@ function Positions() {
           <Form.Item
             wrapperCol={{
               offset: 0,
-              span: 16,
+              span: 24,
             }}
           >
             <button className={`btn btn-${id ? 'success' : 'primary'} w-100 mt-4 py-2`} htmlType="submit">

@@ -14,6 +14,9 @@ const LayoutBreadcrumb = () => {
     '/test': t('menu.item01'),
     '/positions': t('menu.item02'),
     '/team-members': t('menu.item03'),
+    '/solutions': t('menu.item04'),
+    '/project-categories': t('menu.item05'),
+    '/projects': t('menu.item06'),
     '/test/user': t('menu.item02')
   };
 

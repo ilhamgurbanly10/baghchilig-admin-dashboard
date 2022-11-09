@@ -10,12 +10,18 @@
         "successfullyDeleted": "Uğurla Silindi",
         "errorOccured": "Xəta Baş Verdi",
         "successfullyChanged": "Uğurla Dəyişdirildi",
-        "required": "Bu sahə doldurulmalıdır"
+        "required": "Bu sahə doldurulmalıdır",
+        "notPosts": "Hələ ki Paylaşım Mövcud Deyil",
+        "post": "Paylaşım",
+        "posts": "Paylaşım"
     },
     "menu": {
         "item01": "Ana Səhifə",
         "item02": "Vəzifələr",
-        "item03": "Komanda Üzvləri"
+        "item03": "Komanda Üzvləri",
+        "item04": "Həllər",
+        "item05": "Layihə Kateqoriyaları",
+        "item06": "Layihələr"
     },
     "buttons": {
         "backToHome": "Ana səhifəyə qayıt",

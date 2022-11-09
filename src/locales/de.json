@@ -10,12 +10,18 @@
         "successfullyDeleted": "Erfolgreich Gelöscht",
         "errorOccured": "Etwas ist schief gelaufen",
         "successfullyChanged": "Erfolgreich Geändert",
-        "required": "Dieses Input ist erforderlich"
+        "required": "Dieses Input ist erforderlich",
+        "notPosts": "Keine Beiträge Noch",
+        "post": "Beitrag",
+        "posts": "Beiträge"
     },
     "menu": {
         "item01": "Startseite",
         "item02": "Positionen",
-        "item03": "Teammitglieder"
+        "item03": "Teammitglieder",
+        "item04": "Lösungen",
+        "item05": "Projektkategorien",
+        "item06": "Projekte"
     },
     "buttons": {
         "backToHome": "Zurück zur Startseite",

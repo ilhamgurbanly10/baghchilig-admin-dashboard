@@ -2,14 +2,14 @@ import {Helmet} from "react-helmet";
 import {useState , useEffect} from 'react'
 import {useTranslation} from "react-i18next";
 import { useDispatch , useSelector } from "react-redux";
-import {getAllMembers, addMember, editMember, removeMember, switchStatusMember} from '../redux/reducers/teamMembersSlice';
-import { Space, Table, Switch, Popconfirm, notification, Form, Input, Select, Image } from 'antd';
+import {getAllProjectCategories, addProjectCategory, editProjectCategory, removeProjectCategory, switchStatusProjectCategory} from '../redux/reducers/projectCategoriesSlice';
+import { Space, Table, Switch, Popconfirm, notification, Form, Input   } from 'antd';
 import { SmileOutlined , WarningOutlined} from '@ant-design/icons';
 
 
-const TeamMembers = () => {
+const ProjectCategories = () => {
 
-    const data = useSelector((state) => state.teamMembers);
+    const data = useSelector((state) => state.projectCategories);
     const [form] = Form.useForm();
     const {t, i18n} = useTranslation('common');
     let lan = i18n.language;
@@ -17,41 +17,13 @@ const TeamMembers = () => {
     const locales = ['az','en','de'];
     const [id, setId] = useState(null);
     const [status, setStatus] = useState(true);
-    const [selected, setSelected] = useState(0);
     const [loading, setLoading] = useState(true);
-    const { Option } = Select;
 
     const columns = [
       {
-        title: t('titles.image'),
-        dataIndex: 'img',
-        key: 'img',
-        render: (text) => <Image src={text} style={{width: "100px", height: "auto"}}/>,
-      },
-      {
         title: t('titles.name'),
-        dataIndex: `name`,
-        key: `name`,
-      },
-      {
-        title: t('titles.position'),
-        dataIndex: `position_${lan}`,
-        key: `position_${lan}`,
-      },
-      {
-        title: "Instagram",
-        dataIndex: `instagram`,
-        key: `instagram`,
-      },
-      {
-        title: "Twitter",
-        dataIndex: `twitter`,
-        key: `twitter`,
-      },
-      {
-        title: "Facebook",
-        dataIndex: `facebook`,
-        key: `facebook`,
+        dataIndex: `name_${lan}`,
+        key: `name_${lan}`,
       },
       {
         title: t('titles.action'),
@@ -89,12 +61,10 @@ const TeamMembers = () => {
     const addData = (values) => {
 
       let obj = {};
-      const positions = data.positions[selected];
-      obj = {...values, position_az: positions.name_az, position_en: positions.name_en, position_de: positions.name_de}
+      obj = {...values}
       obj.status = status;
-      delete obj.positions;
 
-      dispatch(addMember({...obj}))
+      dispatch(addProjectCategory({...obj}))
       .unwrap()
       .then((originalPromiseResult) => {
         successNotification();
@@ -107,23 +77,17 @@ const TeamMembers = () => {
 
     const startEditing = (id) => {
       setId(id)
-      let editedData = data.data.find(d => d.id === id);
-      const i = data.positions.findIndex((p) => {return p.name_en === editedData.position_en})
-      form.resetFields();
-      form.setFieldsValue(editedData);
-      setSelected(i);
+      let editedData = data.data.find(d => d.id === id)
+      form.setFieldsValue(editedData)
       setStatus(editedData.status);
     }
 
     const editData = (values) => { 
 
       let obj = {};
-      const positions = data.positions[selected];
-      obj = {...values, position_az: positions.name_az, position_en: positions.name_en, position_de: positions.name_de}
+      obj = {...values}
       obj.status = status;
-      delete obj.positions;
-      
-      dispatch(editMember({id, data: {...obj}}))
+      dispatch(editProjectCategory({id, data: {...obj}}))
       .unwrap()
       .then((originalPromiseResult) => {
         successNotification("edit");
@@ -137,7 +101,7 @@ const TeamMembers = () => {
     const changeStatus = (e, id) => {
 
       let editedData = data.data.find(d => d.id === id)
-      dispatch(switchStatusMember({...editedData, status: e}))
+      dispatch(switchStatusProjectCategory({...editedData, status: e}))
       .unwrap()
       .then((originalPromiseResult) => {
         successNotification("edit");
@@ -151,7 +115,7 @@ const TeamMembers = () => {
 
     const removeData = (id) => {
 
-      dispatch(removeMember(id))
+      dispatch(removeProjectCategory(id))
       .unwrap()
       .then((originalPromiseResult) => {
         successNotification("remove");
@@ -167,7 +131,6 @@ const TeamMembers = () => {
       form.resetFields();
       setStatus(true);
       setId(null);
-      setSelected(0);
     };
 
     const successNotification = (type = "add") => {
@@ -191,10 +154,6 @@ const TeamMembers = () => {
       });
     }
 
-    const selectData = (val) => {
-      setSelected(val);
-    }
-
     const footerText = () => {
       let text;
       const len = data.data.length;
@@ -205,7 +164,7 @@ const TeamMembers = () => {
     }
 
     useEffect(()=>{
-      dispatch(getAllMembers())
+      dispatch(getAllProjectCategories())
       .unwrap()
       .then((originalPromiseResult) => {
         setLoading(false);
@@ -216,10 +175,10 @@ const TeamMembers = () => {
       <>
 
         <Helmet>
-          <title>{t('titles.pageName')} - {t('menu.item03')}</title>
+          <title>{t('titles.pageName')} - {t('menu.item05')}</title>
         </Helmet>
 
-        <Table id="table" title={() => ( <h6>{t('menu.item03')}</h6> )} footer={() => footerText() } columns={columns} dataSource={data.data} loading={loading}/>
+        <Table id="table" title={() => ( <h6>{t('menu.item05')}</h6> )} footer={() => footerText() } columns={columns} dataSource={data.data} loading={loading}/>
 
         <Form
             form={form}
@@ -237,52 +196,13 @@ const TeamMembers = () => {
             autoComplete="off"
           > 
 
-          <Form.Item
-            className="mt-5"
-            label={`${t('titles.image')}`}
-            name={`img`}
-            rules={[
-              {
-                required: true,
-                message: t('texts.required'),
-              },
-            ]}
-          >
-            <Input />
-          </Form.Item>
+          { locales.map((l, i) => ( 
 
-          <Form.Item
-            className="mt-5"
-            label={`${t('titles.name')}`}
-            name={`name`}
-            rules={[
-              {
-                required: true,
-                message: t('texts.required'),
-              },
-            ]}
-          >
-            <Input />
-          </Form.Item>
-
-          <Form.Item
-            className="mt-5"
-            label={`Instagram`}
-            name={`instagram`}
-            rules={[
-              {
-                required: true,
-                message: t('texts.required'),
-              },
-            ]}
-          >
-            <Input />
-          </Form.Item>
-
-          <Form.Item
+            <Form.Item
               className="mt-5"
-              label={`Twitter`}
-              name={`twitter`}
+              key={i}
+              label={`${t('titles.name')} - ${l.toUpperCase()}`}
+              name={`name_${l}`}
               rules={[
                 {
                   required: true,
@@ -291,37 +211,9 @@ const TeamMembers = () => {
               ]}
             >
               <Input />
-          </Form.Item>
+            </Form.Item>
 
-          <Form.Item
-            className="mt-5"
-            label={`Facebook`}
-            name={`facebook`}
-            rules={[
-              {
-                required: true,
-                message: t('texts.required'),
-              },
-            ]}
-          >
-            <Input />
-          </Form.Item>
-
-          <Form.Item
-            name="positions"
-            className="mt-5"
-            label={`${t('titles.position')}`}
-          >
-            <Select
-              defaultValue={selected}
-              onChange={selectData}
-              
-            > 
-              { data.positions?.map((p, i) => (
-                <Option key={i} value={i}>{p[`name_${lan}`]}</Option>
-              ))}
-            </Select>
-          </Form.Item>
+          ))}
 
           <Form.Item label="Status" className="mt-5" valuePropName="status">
             <Switch checked={status} onChange={(e) => { setStatus(e) }} />
@@ -350,4 +242,4 @@ const TeamMembers = () => {
 
 }
   
-export default TeamMembers;
+export default ProjectCategories;

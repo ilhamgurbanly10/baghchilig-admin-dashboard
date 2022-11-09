@@ -10,12 +10,18 @@
         "successfullyDeleted": "Successfully Deleted",
         "errorOccured": "Something Went Wrong",
         "successfullyChanged": "Successfully Changed",
-        "required": "This input is required"
+        "required": "This input is required",
+        "notPosts": "Not Posts Yet",
+        "post": "Post",
+        "posts": "Posts"
     },
     "menu": {
         "item01": "Home Page",
         "item02": "Positions",
-        "item03": "Team Members"
+        "item03": "Team Members",
+        "item04": "Solutions",
+        "item05": "Project Categories",
+        "item06": "Projects"
     },
     "buttons": {
         "backToHome": "Back to home page",

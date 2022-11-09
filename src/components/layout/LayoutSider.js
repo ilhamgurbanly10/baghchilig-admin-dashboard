@@ -9,6 +9,8 @@ import {
   PieChartOutlined,
   TeamOutlined,
   UserOutlined,
+  AlignLeftOutlined,
+  BankOutlined
 } from '@ant-design/icons';
 import logo from '../../assets/images/logo.png';
 import {useTranslation} from "react-i18next";
@@ -45,6 +47,27 @@ const LayoutSider = () => {
           <Link to={`/team-members`} className="d-flex align-items-center">
             <TeamOutlined />
             <span>{t('menu.item03')}</span>
+          </Link>
+        </Menu.Item>
+
+        <Menu.Item key="4">
+          <Link to={`/solutions`} className="d-flex align-items-center">
+            <DesktopOutlined />
+            <span>{t('menu.item04')}</span>
+          </Link>
+        </Menu.Item>
+
+        <Menu.Item key="5">
+          <Link to={`/project-categories`} className="d-flex align-items-center">
+            <AlignLeftOutlined />
+            <span>{t('menu.item05')}</span>
+          </Link>
+        </Menu.Item>
+
+        <Menu.Item key="6">
+          <Link to={`/projects`} className="d-flex align-items-center">
+            <BankOutlined />
+            <span>{t('menu.item06')}</span>
           </Link>
         </Menu.Item>
 
