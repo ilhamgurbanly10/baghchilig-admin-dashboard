@@ -21,7 +21,11 @@
         "item03": "Komanda Üzvləri",
         "item04": "Həllər",
         "item05": "Layihə Kateqoriyaları",
-        "item06": "Layihələr"
+        "item06": "Layihələr",
+        "item07": "Əlaqə",
+        "item08": "Əsas Slayder",
+        "item09": "Alış-veriş Kateqoriyaları",
+        "item10": "Alış-veriş Məhsulları"
     },
     "buttons": {
         "backToHome": "Ana səhifəyə qayıt",
@@ -43,6 +47,14 @@
         "date": "Tarix",
         "length": "Say",
         "subtotal": "Toplam Qiymət",
-        "position": "Vəzifə"
+        "position": "Vəzifə",
+        "phone": "Telefon Nömrəsi",
+        "email": "E-Poçt",
+        "address": "Ünvan",
+        "rest": "Qalan",
+        "linkedin": "Linkedin",
+        "instagram": "Instagram",
+        "twitter": "Twitter",
+        "facebook": "Facebook"
     }
 }

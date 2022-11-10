@@ -99,5 +99,63 @@
       "category_en": "Gardening",
       "status": true
     }
+  ],
+  "contact": [
+    {
+      "phone": "1-800-700-600",
+      "email": "info@bagciliq.com",
+      "address": "60 East Side 65th Street, Baku City, NY 10065",
+      "linkedin": "/linkedin",
+      "instagram": "/instagram",
+      "twitter": "/twitter",
+      "facebook": "/facebook",
+      "status": true,
+      "id": 1
+    }
+  ],
+  "main-slider": [
+    {
+      "id": 1,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-YR2vPtzOySZmZHGD1SkdfM51b15MAbTVnwmzxvWvCZ-8uWX5_J9uNU9nQS_l_boJmoQ&usqp=CAU",
+      "name_az": "Gəlin bağınıza həyat gətirək.",
+      "name_en": "Let us bring life to your garden.",
+      "name_de": "Lassen Sie uns Leben in Ihren Garten bringen.",
+      "status": true
+    }
+  ],
+  "shopping-categories": [
+    {
+      "id": 1,
+      "name_az": "Gül",
+      "name_de": "Blume",
+      "name_en": "Flower",
+      "status": true
+    },
+    {
+      "id": 2,
+      "name_az": "Ağac",
+      "name_de": "Baum",
+      "name_en": "Tree",
+      "status": true
+    }
+  ],
+  "shopping-products": [
+    {
+      "id": 1,
+      "img": "https://lzd-img-global.slatic.net/g/p/809c48853950761229647a2fa0b7a92e.jpg_720x720q80.jpg_.webp",
+      "name_az": "Qızıl Gül",
+      "name_de": "Rose Blume",
+      "name_en": "Rose Flower",
+      "text_az": "<p><img src=\"https://lzd-img-global.slatic.net/g/p/809c48853950761229647a2fa0b7a92e.jpg_720x720q80.jpg_.webp\" alt=\"\" width=\"300px\"><br></p><p>Biz gözəl və möhtəşəm bir bağ üçün hər bir şeyi edirik</p>",
+      "text_de": "<p><img src=\"https://lzd-img-global.slatic.net/g/p/809c48853950761229647a2fa0b7a92e.jpg_720x720q80.jpg_.webp\" alt=\"\" width=\"300px\"><br></p><p>Wir tun alles für einen schönen und wunderbaren Garten</p>",
+      "text_en": "<p><img src=\"https://lzd-img-global.slatic.net/g/p/809c48853950761229647a2fa0b7a92e.jpg_720x720q80.jpg_.webp\" alt=\"\" width=\"300px\"><br></p><p>Wo do everytihng for a beautiful and wonderful garden</p>",
+      "category_az": "Gül",
+      "category_de": "Blume",
+      "category_en": "Flower",
+      "length": 5,
+      "price": "200$",
+      "date": "01.09.2022",
+      "status": true
+    }
   ]
 }

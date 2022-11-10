@@ -11,13 +11,16 @@ const LayoutBreadcrumb = () => {
   const pathSnippets = location.pathname.split('/').filter((i) => i);
 
   const breadcrumbNameMap = {
-    '/test': t('menu.item01'),
     '/positions': t('menu.item02'),
     '/team-members': t('menu.item03'),
     '/solutions': t('menu.item04'),
     '/project-categories': t('menu.item05'),
     '/projects': t('menu.item06'),
-    '/test/user': t('menu.item02')
+    '/contact': t('menu.item07'),
+    '/main-slider': t('menu.item08'),
+    '/shopping-categories': t('menu.item09'),
+    '/shopping-products': t('menu.item10'),
+    // '/test/user': t('menu.item02')
   };
 
   const extraBreadcrumbItems = pathSnippets.map((_, index) => {

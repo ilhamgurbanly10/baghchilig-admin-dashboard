@@ -4,6 +4,10 @@ import teamMembersSlice from "../reducers/teamMembersSlice";
 import solutionsSlice from "../reducers/solutionsSlice";
 import projectCategoriesSlice from "../reducers/projectCategoriesSlice";
 import projectsSlice from "../reducers/projectsSlice";
+import contactSlice from "../reducers/contactSlice";
+import mainSliderSlice from "../reducers/mainSliderSlice";
+import shoppingCategoriesSlice from "../reducers/shoppingCategoriesSlice";
+import shoppingProductsSlice from "../reducers/shoppingProductsSlice";
 
 
 export const store = configureStore({
@@ -13,5 +17,9 @@ export const store = configureStore({
         solutions: solutionsSlice,
         projectCategories: projectCategoriesSlice,
         projects: projectsSlice,
+        contact: contactSlice,
+        mainSlider: mainSliderSlice,
+        shoppingCategories: shoppingCategoriesSlice,
+        shoppingProducts: shoppingProductsSlice
     },  
 });

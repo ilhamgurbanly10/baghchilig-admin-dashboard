@@ -5,12 +5,13 @@ import { Link } from 'react-router-dom';
 import {
   HomeOutlined,
   DesktopOutlined,
-  FileOutlined,
-  PieChartOutlined,
+  FileImageOutlined,
+  MailOutlined,
   TeamOutlined,
   UserOutlined,
   AlignLeftOutlined,
-  BankOutlined
+  BankOutlined,
+  ShoppingCartOutlined
 } from '@ant-design/icons';
 import logo from '../../assets/images/logo.png';
 import {useTranslation} from "react-i18next";
@@ -68,6 +69,34 @@ const LayoutSider = () => {
           <Link to={`/projects`} className="d-flex align-items-center">
             <BankOutlined />
             <span>{t('menu.item06')}</span>
+          </Link>
+        </Menu.Item>
+
+        <Menu.Item key="7">
+          <Link to={`/contact`} className="d-flex align-items-center">
+            <MailOutlined />
+            <span>{t('menu.item07')}</span>
+          </Link>
+        </Menu.Item>
+
+        <Menu.Item key="8">
+          <Link to={`/main-slider`} className="d-flex align-items-center">
+            <FileImageOutlined />
+            <span>{t('menu.item08')}</span>
+          </Link>
+        </Menu.Item>
+
+        <Menu.Item key="9">
+          <Link to={`/shopping-categories`} className="d-flex align-items-center">
+            <AlignLeftOutlined />
+            <span>{t('menu.item09')}</span>
+          </Link>
+        </Menu.Item>
+
+        <Menu.Item key="10">
+          <Link to={`/shopping-products`} className="d-flex align-items-center">
+            <ShoppingCartOutlined />
+            <span>{t('menu.item10')}</span>
           </Link>
         </Menu.Item>
 

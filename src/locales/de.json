@@ -21,7 +21,11 @@
         "item03": "Teammitglieder",
         "item04": "Lösungen",
         "item05": "Projektkategorien",
-        "item06": "Projekte"
+        "item06": "Projekte",
+        "item07": "Kontakt",
+        "item08": "Main Slider",
+        "item09": "Einkaufskategorien",
+        "item10": "Einkaufsprodukte"
     },
     "buttons": {
         "backToHome": "Zurück zur Startseite",
@@ -43,6 +47,14 @@
         "date": "Datum",
         "length": "Anzahl",
         "subtotal": "Gesamtes Preis",
-        "position": "Position"
+        "position": "Position",
+        "phone": "Telefonnummer",
+        "email": "Email",
+        "address": "Adresse",
+        "rest": "Reste",
+        "linkedin": "Linkedin",
+        "instagram": "Instagram",
+        "twitter": "Twitter",
+        "facebook": "Facebook"
     }
 }
