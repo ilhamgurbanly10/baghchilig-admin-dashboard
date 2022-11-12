@@ -12,20 +12,48 @@ import './assets/css/ant-design.css';
 import '../node_modules/font-awesome/css/font-awesome.min.css'; 
 import 'antd/dist/antd.css';
 
+import { useDispatch , useSelector } from "react-redux";
+import {getUser, logOutUser} from './redux/reducers/userSlice';
+import Login from './pages/Login';
+
 import {I18nextProvider} from "react-i18next";
 import i18next from "i18next";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
-function App() {
+const App = () => {
+
+  let token = localStorage.getItem('access_token') || sessionStorage.getItem('access_token')
+  const data = useSelector((state) => state.user);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    
+    if (token) {
+      dispatch(getUser(token))
+      .unwrap()
+      .then((originalPromiseResult) => {
+        // console.log(originalPromiseResult)
+      })
+    } else {
+      dispatch(logOutUser())
+    }
+    
+  }, [])
 
   return (
     <I18nextProvider i18n={i18next}>
+      
       <BrowserRouter>
-        <Layout>
-            <Routing/>
-        </Layout>
-      </BrowserRouter>
+
+        {data.isLoggedIn ?
+          <Layout>
+              <Routing/>
+          </Layout> :
+          <Login/>
+        }  
+        </BrowserRouter>
+
     </I18nextProvider>  
   );
 }

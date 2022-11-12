@@ -11,6 +11,7 @@ const LayoutBreadcrumb = () => {
   const pathSnippets = location.pathname.split('/').filter((i) => i);
 
   const breadcrumbNameMap = {
+    '/user': t('titles.user'),
     '/positions': t('menu.item02'),
     '/team-members': t('menu.item03'),
     '/solutions': t('menu.item04'),

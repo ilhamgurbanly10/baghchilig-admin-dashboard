@@ -13,7 +13,12 @@
         "required": "Dieses Input ist erforderlich",
         "notPosts": "Keine Beiträge Noch",
         "post": "Beitrag",
-        "posts": "Beiträge"
+        "posts": "Beiträge",
+        "invalidEmail": "Ungültige E-Mail-Adresse",
+        "successfullyLogin": "Einloggen Erfolgreich",
+        "couldNotLogin": "E-Mail oder Passwort ist nicht korrekt",
+        "successfullyLogout": "Ausloggen Erfolgreich",
+        "logoutConfirmation": "Bist du sicher auszuloggen?"
     },
     "menu": {
         "item01": "Startseite",
@@ -32,7 +37,9 @@
         "edit": "Bearbeiten",
         "delete": "Löschen",
         "add": "Hinzufügen",
-        "reset": "Zurücksetzen"
+        "reset": "Zurücksetzen",
+        "login": "Einloggen",
+        "logout": "Ausloggen"
     },
     "titles": {
         "pageName": "Bağçılıq",
@@ -55,6 +62,12 @@
         "linkedin": "Linkedin",
         "instagram": "Instagram",
         "twitter": "Twitter",
-        "facebook": "Facebook"
+        "facebook": "Facebook",
+        "login": "Login",
+        "password": "Passwort",
+        "remember": "Erinneren sich an mich",
+        "user": "Benutzer",
+        "active": "Aktiv",
+        "deactive": "Deaktiv"
     }
 }

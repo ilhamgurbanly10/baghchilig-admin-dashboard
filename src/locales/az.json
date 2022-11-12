@@ -13,7 +13,12 @@
         "required": "Bu sahə doldurulmalıdır",
         "notPosts": "Hələ ki Paylaşım Mövcud Deyil",
         "post": "Paylaşım",
-        "posts": "Paylaşım"
+        "posts": "Paylaşım",
+        "invalidEmail": "Keçərsiz E-Poçt Ünvanı",
+        "successfullyLogin": "Uğurla Daxil Oldunuz",
+        "couldNotLogin": "E-Poçt Ünvanı və yaxud Şifrə yanlışdır",
+        "successfullyLogout": "Uğurla Çıxış Etdiniz",
+        "logoutConfirmation": "Çıxış etmək istədiyinizə əminsinizmi?"
     },
     "menu": {
         "item01": "Ana Səhifə",
@@ -32,7 +37,9 @@
         "edit": "Düzəlt",
         "delete": "Sil",
         "add": "Əlavə Et",
-        "reset": "Təmizlə"
+        "reset": "Təmizlə",
+        "login": "Daxil Ol",
+        "logout": "Çıxış Et"
     },
     "titles": {
         "pageName": "Bağçılıq",
@@ -55,6 +62,12 @@
         "linkedin": "Linkedin",
         "instagram": "Instagram",
         "twitter": "Twitter",
-        "facebook": "Facebook"
+        "facebook": "Facebook",
+        "login": "Daxil Olma",
+        "password": "Şifrə",
+        "remember": "Məni Xatırla",
+        "user": "İstifadəçi",
+        "active": "Aktiv",
+        "deactive": "Deaktiv"
     }
 }
