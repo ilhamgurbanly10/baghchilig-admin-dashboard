@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from '../pages/Home';
 import User from '../pages/User';
+import Users from '../pages/Users';
 import Positions from '../pages/Positions';
 import TeamMembers from '../pages/TeamMembers';
 import Solutions from '../pages/Solutions';
@@ -19,6 +20,7 @@ const Routing = () => {
             <Route index element={<Home />} />
             <Route path="*" element={<Error404 />} />
             <Route path="user" element={<User />} />
+            <Route path="users" element={<Users />} />
             <Route path="positions" element={<Positions />} />
             <Route path="team-members" element={<TeamMembers />} />
             <Route path="solutions" element={<Solutions />} />

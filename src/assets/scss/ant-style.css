@@ -1,0 +1,16 @@
+.ant-modal-no-footer .ant-modal-footer {
+  display: none;
+}
+
+.ant-modal-img img {
+  max-width: 100% !important;
+}
+
+.ant-image-mask-info {
+  display: none !important;
+}
+
+.ant-form-item-explain-error {
+  margin-top: 0.7rem !important;
+  margin-bottom: 0.7rem !important;
+}/*# sourceMappingURL=ant-style.css.map */

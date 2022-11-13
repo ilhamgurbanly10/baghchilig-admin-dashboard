@@ -100,6 +100,13 @@ const LayoutSider = () => {
           </Link>
         </Menu.Item>
 
+        <Menu.Item key="11">
+          <Link to={`/users`} className="d-flex align-items-center">
+            <UserOutlined />
+            <span>{t('titles.users')}</span>
+          </Link>
+        </Menu.Item>
+
       </Menu> 
 
     </Sider>

@@ -175,12 +175,12 @@
       "avatar": "https://www.nicepng.com/png/detail/128-1280036_jpg-free-stock-female-vector-user-user-female.png",
       "wallpaper": "https://cdnb.artstation.com/p/assets/images/images/038/792/707/large/owen-russell-inspiration.jpg?1624062855",
       "email": "Aysu_Gurbanly@mail.ru",
-      "token": "Yyauo7899OOjh8903rtufhjoalmsKK90olplO95t4ReD33s2qwa1f",
       "first_name": "Aysu",
       "last_name": "Gurbanly",
       "password": "aysu01",
       "status": true,
-      "isAdmin": false,
+      "isAdmin": true,
+      "token": "Yyauo7899OOjh8903rtufhjoalmsKK90olplO95t4ReD33s2qwa1f",
       "id": 2
     }
   ]

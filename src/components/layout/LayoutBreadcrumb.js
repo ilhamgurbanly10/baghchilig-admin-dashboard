@@ -12,6 +12,7 @@ const LayoutBreadcrumb = () => {
 
   const breadcrumbNameMap = {
     '/user': t('titles.user'),
+    '/users': t('titles.users'),
     '/positions': t('menu.item02'),
     '/team-members': t('menu.item03'),
     '/solutions': t('menu.item04'),
