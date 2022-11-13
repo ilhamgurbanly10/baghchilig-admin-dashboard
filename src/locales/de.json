@@ -68,6 +68,10 @@
         "remember": "Erinneren sich an mich",
         "user": "Benutzer",
         "active": "Aktiv",
-        "deactive": "Deaktiv"
+        "deactive": "Deaktiv",
+        "wallpaper": "Hintergrund",
+        "firstName": "Vorname",
+        "lastName": "Nachname",
+        "isAdmin": "Wählen Als Admin Aus"
     }
 }

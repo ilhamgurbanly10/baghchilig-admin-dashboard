@@ -15,17 +15,18 @@ import 'antd/dist/antd.css';
 import { useDispatch , useSelector } from "react-redux";
 import {getUser, logOutUser} from './redux/reducers/userSlice';
 import Login from './pages/Login';
+import Loader from './components/elements/Loader';
 
 import {I18nextProvider} from "react-i18next";
 import i18next from "i18next";
 import { useEffect, useState } from "react";
-
 
 const App = () => {
 
   let token = localStorage.getItem('access_token') || sessionStorage.getItem('access_token')
   const data = useSelector((state) => state.user);
   const dispatch = useDispatch();
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     
@@ -33,10 +34,11 @@ const App = () => {
       dispatch(getUser(token))
       .unwrap()
       .then((originalPromiseResult) => {
-        // console.log(originalPromiseResult)
+        setLoading(false)
       })
     } else {
       dispatch(logOutUser())
+      setLoading(false)
     }
     
   }, [])
@@ -44,6 +46,7 @@ const App = () => {
   return (
     <I18nextProvider i18n={i18next}>
       
+      {loading && <Loader/>}
       <BrowserRouter>
 
         {data.isLoggedIn ?

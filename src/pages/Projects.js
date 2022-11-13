@@ -4,14 +4,16 @@ import JoditEditor from 'jodit-react';
 import {useTranslation} from "react-i18next";
 import { useDispatch , useSelector } from "react-redux";
 import {getAllProjects, addProject, editProject, removeProject, switchStatusProject} from '../redux/reducers/projectsSlice';
-import { Space, Table, Switch, Popconfirm, notification, Form, Input, Modal, Image, Select } from 'antd';
-import { SmileOutlined , WarningOutlined} from '@ant-design/icons';
+import { Button, Space, Table, Switch, Popconfirm, notification, Form, Input, Modal, Image, Select } from 'antd';
+import { CheckCircleFilled , WarningOutlined} from '@ant-design/icons';
 
 
 const Projects = ({ placeholder }) => {
 
     const data = useSelector((state) => state.projects);
     const [form] = Form.useForm();
+    const user = useSelector((state) => state.user);
+    const isAdmin = user.data[0].isAdmin;
     const {t, i18n} = useTranslation('common');
     let lan = i18n.language;
     const dispatch = useDispatch();
@@ -62,19 +64,22 @@ const Projects = ({ placeholder }) => {
       {
         title: t('titles.action'),
         key: 'action',
-        render: (_, record) => (
+        render: (_, record) => ( 
           <Space size="middle">
             
             <button type="button" className="btn btn-primary me-3 ms-3" onClick={() => { showModal(record[`text_${lan}`]) }}>
                 {t('titles.text')} <i className="fa fa-eye ms-1"></i>
             </button>
 
-            <Switch checked={record.status} onChange={(e) => { changeStatus(e, record.id) }} />
+            { isAdmin && <Switch checked={record.status} onChange={(e) => { changeStatus(e, record.id) }} /> }
 
+            { isAdmin && 
             <a href="#form" onClick={() => { startEditing(record.id); }} className="btn btn-success ms-3 me-3">
                 {t('buttons.edit')}
             </a>
+            }
 
+            { isAdmin && 
             <Popconfirm
               title={t('texts.confirmationMessage')}
               onConfirm={() => { removeData(record.id) }}
@@ -85,6 +90,7 @@ const Projects = ({ placeholder }) => {
                   {t('buttons.delete')}
               </button>
             </Popconfirm>
+            }
           
           </Space>
         ),
@@ -202,7 +208,7 @@ const Projects = ({ placeholder }) => {
 
       notification.open({
         message: t(`texts.${messagge}`),
-        icon: <SmileOutlined style={{ color: '#108ee9' }} />,
+        icon: <CheckCircleFilled style={{ color: '#2fee10' }} />,
       });
 
     }
@@ -210,7 +216,7 @@ const Projects = ({ placeholder }) => {
     const errorNotification = () => {
       notification.open({
         message: t('texts.errorOccured'),
-        icon: <WarningOutlined style={{ color: '#108ee9' }} />,
+        icon: <WarningOutlined style={{ color: '#fc0f30' }} />,
       });
     }
 
@@ -249,6 +255,7 @@ const Projects = ({ placeholder }) => {
 
         <Table id="table" title={() => ( <h6>{t('menu.item06')}</h6> )} footer={() => footerText() } columns={columns} dataSource={data.data} loading={loading}/>
 
+          { isAdmin && 
           <Form
             form={form}
             name="basic"
@@ -375,17 +382,19 @@ const Projects = ({ placeholder }) => {
                 span: 24,
               }}
             >
-              <button className={`btn btn-${id ? 'success' : 'primary'} w-100 mt-4 py-2`} htmlType="submit">
-                  { id ? t('buttons.edit') : t('buttons.add')}
-              </button>
+              <Button className={`w-100 mt-4`} type="primary" htmlType="submit">
+                { id ? t('buttons.edit') : t('buttons.add')}
+              </Button>
 
-              <button className={`btn btn-danger w-100 mt-4 py-2 mt-4`} htmlType="button" onClick={() => { empty() }}>
+              <Button className={`w-100 mt-4 mt-4`} type="primary" danger htmlType="button" onClick={() => { empty() }}>
                   {t('buttons.reset')}
-              </button>
+              </Button>
 
             </Form.Item>
 
           </Form>
+
+          }
 
           <Modal
             className="ant-modal-no-footer ant-modal-img"

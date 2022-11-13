@@ -160,18 +160,28 @@
   ],
   "users": [
     {
-      "id": 1,
+      "avatar": "https://media.istockphoto.com/id/1321913767/vector/handsome-young-bearded-man-profile-view.jpg?s=612x612&w=0&k=20&c=m24UP30VztiOKO772m52jAYYURrvmeTiFntGCwqOudI=",
+      "wallpaper": "https://w0.peakpx.com/wallpaper/142/632/HD-wallpaper-male-user-neon-icon-blue-background-neon-symbols-male-user-neon-icons-male-user-sign-computer-signs-male-user-icon-computer-icons-thumbnail.jpg",
       "email": "Ilham_Gurbanly@mail.ru",
       "first_name": "Ilham",
       "last_name": "Gurbanly",
-      "avatar": "https://media.istockphoto.com/id/1321913767/vector/handsome-young-bearded-man-profile-view.jpg?s=612x612&w=0&k=20&c=m24UP30VztiOKO772m52jAYYURrvmeTiFntGCwqOudI=",
-      "wallpaper": "https://w0.peakpx.com/wallpaper/142/632/HD-wallpaper-male-user-neon-icon-blue-background-neon-symbols-male-user-neon-icons-male-user-sign-computer-signs-male-user-icon-computer-icons-thumbnail.jpg",
-      "token": "dDlij490Axf4g5Yu09klMNppli921Ghkkmno875e4dw2a",
       "password": "ilham10",
-      "position_az": "İdarəçi",
-      "position_de": "Admin",
-      "position_en": "Admin",
-      "status": true
+      "token": "rrt10gHjk9874ryuY74Rd442rtysJ0Plo941waedfx57zhhJJKk8Jkl",
+      "status": true,
+      "isAdmin": true,
+      "id": 1
+    },
+    {
+      "avatar": "https://www.nicepng.com/png/detail/128-1280036_jpg-free-stock-female-vector-user-user-female.png",
+      "wallpaper": "https://cdnb.artstation.com/p/assets/images/images/038/792/707/large/owen-russell-inspiration.jpg?1624062855",
+      "email": "Aysu_Gurbanly@mail.ru",
+      "token": "Yyauo7899OOjh8903rtufhjoalmsKK90olplO95t4ReD33s2qwa1f",
+      "first_name": "Aysu",
+      "last_name": "Gurbanly",
+      "password": "aysu01",
+      "status": true,
+      "isAdmin": false,
+      "id": 2
     }
   ]
 }

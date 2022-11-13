@@ -25,6 +25,13 @@ export const removeUser= createAsyncThunk("removeUser" , async (id) => {
     return id;
 })
 
+export const editUser = createAsyncThunk("editUser" , async (data) => {
+    await  admin.put(`/${table}/${data.id}` , {
+        ...data.data
+    })
+    return data;
+})
+
 export const userSlice = createSlice({
     name:'user',
     initialState: initialState,
@@ -59,6 +66,10 @@ export const userSlice = createSlice({
             state.isLoggedIn = false; 
             localStorage.removeItem('access_token');
             sessionStorage.removeItem('access_token');      
+        });
+
+        builder.addCase(editUser.fulfilled , (state , action) => {
+            state.data[0] = {...action.payload.data, id: action.payload.id};      
         });
 
     }

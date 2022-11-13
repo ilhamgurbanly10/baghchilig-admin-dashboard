@@ -145,13 +145,13 @@ const Login = () => {
               }}
             >
 
-              <button className={`btn btn-primary w-100 mt-3 py-2`} htmlType="submit">
-                  { t('buttons.login') }
-              </button>
+              <Button className={`w-100 mt-3`} type="primary" htmlType="submit">
+                  {t('buttons.login')}
+              </Button>
 
-              <button className={`btn btn-danger w-100 mt-4 py-2 mt-4`} htmlType="button" onClick={() => { empty() }}>
+              <Button className={`w-100 mt-4 mt-4`} type="primary" danger htmlType="button" onClick={() => { empty() }}>
                   {t('buttons.reset')}
-              </button>
+              </Button>
 
             </Form.Item>
           </Form>

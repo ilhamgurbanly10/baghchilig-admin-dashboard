@@ -68,6 +68,10 @@
         "remember": "Məni Xatırla",
         "user": "İstifadəçi",
         "active": "Aktiv",
-        "deactive": "Deaktiv"
+        "deactive": "Deaktiv",
+        "wallpaper": "Divar Kağızı",
+        "firstName": "Ad",
+        "lastName": "Soyad",
+        "isAdmin": "Admin Olaraq Seç"
     }
 }

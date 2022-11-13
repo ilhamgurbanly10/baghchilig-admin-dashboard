@@ -2,8 +2,8 @@ import {Helmet} from "react-helmet";
 import {useState , useEffect} from 'react'
 import {useTranslation} from "react-i18next";
 import { useDispatch , useSelector } from "react-redux";
-import {removeUser} from '../redux/reducers/userSlice';
-import { Space, Table, Switch, Popconfirm, notification, Form, Input, Avatar, Card, Image } from 'antd';
+import {removeUser, editUser, logOutUser} from '../redux/reducers/userSlice';
+import { Space, Table, Switch, Popconfirm, notification, Form, Input, Avatar, Card, Button, Image } from 'antd';
 import { SmileOutlined , CheckCircleFilled, WarningOutlined, EditOutlined, EllipsisOutlined, DeleteOutlined} from '@ant-design/icons';
 
 const { Meta } = Card;
@@ -16,6 +16,7 @@ const User = () => {
     let lan = i18n.language;
     const dispatch = useDispatch();
     const [status, setStatus] = useState(true);
+    const [adminStatus, setAdminStatus] = useState(true);
     const [loading, setLoading] = useState(true);
     const [showForm, setShowForm] = useState(false);
     const [showRest, setShowRest] = useState(false);
@@ -25,43 +26,24 @@ const User = () => {
       empty();  
     };
 
-    // const startEditing = (id) => {
-    //   setId(id)
-    //   let editedData = data.data.find(d => d.id === id)
-    //   form.setFieldsValue(editedData)
-    //   setStatus(editedData.status);
-    // }
-
     const editData = (values) => { 
 
       let obj = {};
-      obj = {...values}
+      obj = {...values, token: data.data[0].token }
       obj.status = status;
-      // dispatch(edit({id: data.data[0].id, data: {...obj}}))
-      // .unwrap()
-      // .then((originalPromiseResult) => {
-      //   successNotification("edit");
-      // })
-      // .catch((rejectedValueOrSerializedError) => {
-      //   errorNotification();
-      // })
+      obj.isAdmin = adminStatus;
+      dispatch(editUser({id: data.data[0].id, data: {...obj}}))
+      .unwrap()
+      .then((originalPromiseResult) => {
+        successNotification("edit");
+        if (!status) dispatch(logOutUser());
+        empty();
+      })
+      .catch((rejectedValueOrSerializedError) => {
+        errorNotification();
+      })
 
     }
-
-    // const changeStatus = (e, id) => {
-
-    //   let editedData = data.data.find(d => d.id === id)
-    //   dispatch(switchStatus({...editedData, status: e}))
-    //   .unwrap()
-    //   .then((originalPromiseResult) => {
-    //     successNotification("edit");
-    //   })
-    //   .catch((rejectedValueOrSerializedError) => {
-    //     errorNotification();
-    //   })
-    //   empty();
-
-    // }
 
     const removeData = () => {
 
@@ -78,7 +60,8 @@ const User = () => {
 
     const empty = () => {
       form.resetFields();
-      setStatus(true);
+      setStatus(data.data[0].status);
+      setAdminStatus(data.data[0].isAdmin);
     };
 
     const successNotification = (type = "add") => {
@@ -102,8 +85,16 @@ const User = () => {
       });
     }
 
-    useEffect(()=>{
+    const validateMessages = {
+      required: t('texts.required'),
+      types: {
+        email: t('texts.invalidEmail')
+      }
+    };
 
+    useEffect(()=>{
+      setStatus(data.data[0].status);
+      setAdminStatus(data.data[0].isAdmin);
     }, [])
 
     return (
@@ -157,7 +148,7 @@ const User = () => {
             </p>
             
             <p className="my-3">
-                <strong className="me-1">{t('titles.position')}: </strong>{data.data[0][`position_${lan}`]}
+                <strong className="me-1">{t('titles.position')}: </strong>{data.data[0].isAdmin ? 'Admin' : t('titles.user')}
             </p>
 
             <p className="my-3">
@@ -166,37 +157,108 @@ const User = () => {
 
         </div>
 
-
         <Form
             form={form}
             name="basic"
             className={`mt-5 pt-5 w-65 ${!showForm && 'd-none'}`}
             id="form"
+            validateMessages={validateMessages}
             labelCol={{
               span: 24,
             }}
             wrapperCol={{
               span: 24,
             }}
+            initialValues={{
+              ...data.data[0]
+            }}
             layout="vertical"
             onFinish={onFinish}
             autoComplete="off"
-          > 
+        > 
 
+          <Form.Item
+            className="mt-5"
+            label={`${t('titles.image')}`}
+            name={`avatar`}
+            rules={[
+              {
+                required: true,
+              },
+            ]}
+          >
+            <Input />
+          </Form.Item>
 
-            <Form.Item
+          <Form.Item
+            className="mt-5"
+            label={`${t('titles.wallpaper')}`}
+            name={`wallpaper`}
+            rules={[
+              {
+                required: true,
+              },
+            ]}
+          >
+            <Input />
+          </Form.Item>
+
+          <Form.Item
+            className="mt-5"
+            label={`${t('titles.email')}`}
+            name={`email`}
+            rules={[
+              {
+                required: true,
+                type: 'email',
+              },
+            ]}
+          >
+            <Input />
+          </Form.Item>
+
+          <Form.Item
+            className="mt-5"
+            label={`${t('titles.firstName')}`}
+            name={`first_name`}
+            rules={[
+              {
+                required: true,
+              },
+            ]}
+          >
+            <Input />
+          </Form.Item>
+
+          <Form.Item
+            className="mt-5"
+            label={`${t('titles.lastName')}`}
+            name={`last_name`}
+            rules={[
+              {
+                required: true,
+              },
+            ]}
+          >
+            <Input />
+          </Form.Item>
+
+          <Form.Item
+              label={t('titles.password')}
+              name="password"
               className="mt-5"
-              label={`${t('titles.name')}`}
-              name={`name`}
               rules={[
                 {
                   required: true,
-                  message: t('texts.required'),
                 },
               ]}
             >
-              <Input />
-            </Form.Item>
+              <Input.Password />
+          </Form.Item>
+          
+          { data.data[0].isAdmin && <Form.Item label={t('titles.isAdmin')} className="mt-5" valuePropName="isAdmin">
+            <Switch checked={adminStatus} onChange={(e) => { setAdminStatus(e) }} />
+          </Form.Item> }
 
           <Form.Item label="Status" className="mt-5" valuePropName="status">
             <Switch checked={status} onChange={(e) => { setStatus(e) }} />
@@ -208,13 +270,13 @@ const User = () => {
               span: 24,
             }}
           >
-            <button className={`btn btn-success w-100 mt-4 py-2`} htmlType="submit">
+            <Button className={`w-100 mt-4`} type="primary" htmlType="submit">
                 {t('buttons.edit')}
-            </button>
+            </Button>
 
-            <button className={`btn btn-danger w-100 mt-4 py-2 mt-4`} htmlType="button" onClick={() => { empty() }}>
+            <Button className={`w-100 mt-4 mt-4`} type="primary" danger htmlType="button" onClick={() => { empty() }}>
                 {t('buttons.reset')}
-            </button>
+            </Button>
 
           </Form.Item>
 

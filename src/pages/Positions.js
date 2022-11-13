@@ -3,13 +3,15 @@ import {useState , useEffect} from 'react'
 import {useTranslation} from "react-i18next";
 import { useDispatch , useSelector } from "react-redux";
 import {getAll, add, edit, remove, switchStatus} from '../redux/reducers/positionsSlice';
-import { Space, Table, Switch, Popconfirm, notification, Form, Input   } from 'antd';
-import { SmileOutlined , WarningOutlined} from '@ant-design/icons';
+import { Button, Space, Table, Switch, Popconfirm, notification, Form, Input   } from 'antd';
+import { CheckCircleFilled , WarningOutlined} from '@ant-design/icons';
 
 
 const Positions = () => {
 
     const data = useSelector((state) => state.positions);
+    const user = useSelector((state) => state.user);
+    const isAdmin = user.data[0].isAdmin;
     const [form] = Form.useForm();
     const {t, i18n} = useTranslation('common');
     let lan = i18n.language;
@@ -25,18 +27,21 @@ const Positions = () => {
         dataIndex: `name_${lan}`,
         key: `name_${lan}`,
       },
-      {
+      { 
         title: t('titles.action'),
         key: 'action',
         render: (_, record) => (
           <Space size="middle">
             
-            <Switch checked={record.status} onChange={(e) => { changeStatus(e, record.id) }} />
+            { isAdmin && <Switch checked={record.status} onChange={(e) => { changeStatus(e, record.id) }} /> }
 
+            {isAdmin && 
             <a href="#form" onClick={() => { startEditing(record.id); }} className="btn btn-success ms-3 me-3">
                 {t('buttons.edit')}
             </a>
+            }
 
+            {isAdmin &&
             <Popconfirm
               title={t('texts.confirmationMessage')}
               onConfirm={() => { removeData(record.id) }}
@@ -47,6 +52,7 @@ const Positions = () => {
                   {t('buttons.delete')}
               </button>
             </Popconfirm>
+            }
           
           </Space>
         ),
@@ -142,7 +148,7 @@ const Positions = () => {
 
       notification.open({
         message: t(`texts.${messagge}`),
-        icon: <SmileOutlined style={{ color: '#108ee9' }} />,
+        icon: <CheckCircleFilled style={{ color: '#2fee10' }} />,
       });
 
     }
@@ -150,7 +156,7 @@ const Positions = () => {
     const errorNotification = () => {
       notification.open({
         message: t('texts.errorOccured'),
-        icon: <WarningOutlined style={{ color: '#108ee9' }} />,
+        icon: <WarningOutlined style={{ color: '#fc0f30' }} />,
       });
     }
 
@@ -180,7 +186,8 @@ const Positions = () => {
 
         <Table id="table" title={() => ( <h6>{t('menu.item02')}</h6> )} footer={() => footerText() } columns={columns} dataSource={data.data} loading={loading}/>
 
-        <Form
+        {isAdmin && 
+          <Form
             form={form}
             name="basic"
             className="mt-5 pt-5 w-65"
@@ -225,17 +232,19 @@ const Positions = () => {
               span: 24,
             }}
           >
-            <button className={`btn btn-${id ? 'success' : 'primary'} w-100 mt-4 py-2`} htmlType="submit">
-                { id ? t('buttons.edit') : t('buttons.add')}
-            </button>
+            <Button className={`w-100 mt-4`} type="primary" htmlType="submit">
+              { id ? t('buttons.edit') : t('buttons.add')}
+            </Button>
 
-            <button className={`btn btn-danger w-100 mt-4 py-2 mt-4`} htmlType="button" onClick={() => { empty() }}>
+            <Button className={`w-100 mt-4 mt-4`} type="primary" danger htmlType="button" onClick={() => { empty() }}>
                 {t('buttons.reset')}
-            </button>
+            </Button>
 
           </Form.Item>
 
         </Form>
+
+        }
 
       </>  
     );
