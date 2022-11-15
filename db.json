@@ -170,18 +170,26 @@
       "status": true,
       "isAdmin": true,
       "id": 1
+    }
+  ],
+  "movies": [
+    {
+      "img": "https://i.annihil.us/u/prod/marvel/i/mg/6/10/62cf2052a672f/clean.jpg",
+      "name": "Predator 1",
+      "watched": false,
+      "id": 1
     },
     {
-      "avatar": "https://www.nicepng.com/png/detail/128-1280036_jpg-free-stock-female-vector-user-user-female.png",
-      "wallpaper": "https://cdnb.artstation.com/p/assets/images/images/038/792/707/large/owen-russell-inspiration.jpg?1624062855",
-      "email": "Aysu_Gurbanly@mail.ru",
-      "first_name": "Aysu",
-      "last_name": "Gurbanly",
-      "password": "aysu01",
-      "status": true,
-      "isAdmin": true,
-      "token": "Yyauo7899OOjh8903rtufhjoalmsKK90olplO95t4ReD33s2qwa1f",
+      "img": "https://i.annihil.us/u/prod/marvel/i/mg/6/10/62cf2052a672f/clean.jpg",
+      "name": "Predator 2",
+      "watched": false,
       "id": 2
+    },
+    {
+      "img": "https://i.annihil.us/u/prod/marvel/i/mg/6/10/62cf2052a672f/clean.jpg",
+      "name": "Predator 3",
+      "watched": false,
+      "id": 3
     }
   ]
 }

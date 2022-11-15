@@ -11,6 +11,7 @@ import Contact from '../pages/Contact';
 import MainSlider from '../pages/MainSlider';
 import ShoppingCategories from '../pages/ShoppingCategories';
 import ShoppingProducts from '../pages/ShoppingProducts';
+import Movies from '../pages/Movies';
 
 import Error404 from '../pages/Error_404';
 
@@ -21,6 +22,7 @@ const Routing = () => {
             <Route path="*" element={<Error404 />} />
             <Route path="user" element={<User />} />
             <Route path="users" element={<Users />} />
+            <Route path="Movies" element={<Movies />} />
             <Route path="positions" element={<Positions />} />
             <Route path="team-members" element={<TeamMembers />} />
             <Route path="solutions" element={<Solutions />} />

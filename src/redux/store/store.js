@@ -10,6 +10,7 @@ import contactSlice from "../reducers/contactSlice";
 import mainSliderSlice from "../reducers/mainSliderSlice";
 import shoppingCategoriesSlice from "../reducers/shoppingCategoriesSlice";
 import shoppingProductsSlice from "../reducers/shoppingProductsSlice";
+import moviesSlice from "../reducers/moviesSlice";
 
 
 export const store = configureStore({
@@ -24,6 +25,7 @@ export const store = configureStore({
         contact: contactSlice,
         mainSlider: mainSliderSlice,
         shoppingCategories: shoppingCategoriesSlice,
-        shoppingProducts: shoppingProductsSlice
+        shoppingProducts: shoppingProductsSlice,
+        movies: moviesSlice
     },  
 });

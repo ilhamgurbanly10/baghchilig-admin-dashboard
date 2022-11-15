@@ -107,6 +107,13 @@ const LayoutSider = () => {
           </Link>
         </Menu.Item>
 
+        <Menu.Item key="12">
+          <Link to={`/movies`} className="d-flex align-items-center">
+            <DesktopOutlined />
+            <span>{t('titles.movies')}</span>
+          </Link>
+        </Menu.Item>
+
       </Menu> 
 
     </Sider>

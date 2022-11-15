@@ -39,7 +39,9 @@
         "add": "Hinzufügen",
         "reset": "Zurücksetzen",
         "login": "Einloggen",
-        "logout": "Ausloggen"
+        "logout": "Ausloggen",
+        "watched": "Gecuckt",
+        "unwatched": "Ungecuckt"
     },
     "titles": {
         "pageName": "Bağçılıq",
@@ -73,6 +75,8 @@
         "wallpaper": "Hintergrund",
         "firstName": "Vorname",
         "lastName": "Nachname",
-        "isAdmin": "Wählen Als Admin Aus"
+        "isAdmin": "Wählen Als Admin Aus",
+        "movies": "Filme",
+        "watchedMovies": "Gecuckte Filmen"
     }
 }

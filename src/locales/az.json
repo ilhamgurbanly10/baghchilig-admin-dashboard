@@ -39,7 +39,9 @@
         "add": "Əlavə Et",
         "reset": "Təmizlə",
         "login": "Daxil Ol",
-        "logout": "Çıxış Et"
+        "logout": "Çıxış Et",
+        "watched": "Baxılmış",
+        "unwatched": "Baxılmamış"
     },
     "titles": {
         "pageName": "Bağçılıq",
@@ -73,6 +75,8 @@
         "wallpaper": "Divar Kağızı",
         "firstName": "Ad",
         "lastName": "Soyad",
-        "isAdmin": "Admin Olaraq Seç"
+        "isAdmin": "Admin Olaraq Seç",
+        "movies": "Filmlər",
+        "watchedMovies": "Baxılmış Filmlər"
     }
 }

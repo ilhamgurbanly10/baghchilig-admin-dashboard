@@ -39,7 +39,9 @@
         "delete": "Delete",
         "add": "Add",
         "reset": "Reset",
-        "login": "Login"
+        "login": "Login",
+        "watched": "Watched",
+        "unwatched": "Unwatched"
     },
     "titles": {
         "pageName": "Bağçılıq",
@@ -73,6 +75,8 @@
         "wallpaper": "Wallpaper",
         "firstName": "First Name",
         "lastName": "Last Name",
-        "isAdmin": "Select As Admin"
+        "isAdmin": "Select As Admin",
+        "movies": "Movies",
+        "watchedMovies": "Watched Movies"
     }
 }
